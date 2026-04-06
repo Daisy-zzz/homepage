@@ -1,0 +1,10 @@
+- date: 2025
+  title: MergeVLA appears at CVPR 2025
+  summary: Recent work explores cross-skill model merging toward generalist vision-language-action agents.
+- date: 2025
+  title: NeurIPS 2025 work on ordering and continuity
+  summary: Public profile data highlights new work on provable temporal structure in vision-language pretraining.
+  url: https://actol-pretrain.github.io/
+- date: 2024
+  title: Temporal reasoning remains a strong thread
+  summary: Publications in retrieval, graph learning, and popularity prediction show consistent interest in structured temporal signals.

@@ -1,0 +1,47 @@
+---
+title: Publications
+description: Selected publications for Zhizhen Zhang.
+permalink: /publications/
+---
+{% assign publications = site.data.publications | sort: "year" | reverse %}
+
+<section class="page-hero">
+  <p class="eyebrow">Publications</p>
+  <h1 class="page-title">Selected research outputs</h1>
+  <p class="lead">
+    This page lists the visible publications used to seed the homepage. The full and more
+    frequently updated record remains on Google Scholar.
+  </p>
+</section>
+
+<section class="panel">
+  <div class="section-heading section-heading-row">
+    <div>
+      <p class="section-kicker">Publication List</p>
+      <h2>Chronological overview</h2>
+    </div>
+    <a class="button secondary compact-button" href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">Scholar profile</a>
+  </div>
+
+  <div class="publication-list">
+    {% for publication in publications %}
+    <article class="publication-card">
+      <div class="publication-meta">
+        <span class="publication-year">{{ publication.year }}</span>
+        <span>{{ publication.citations }}</span>
+        <span class="publication-tag">{{ publication.area }}</span>
+      </div>
+      <h3 class="publication-title">
+        {% if publication.url %}
+        <a href="{{ publication.url }}" target="_blank" rel="noreferrer">{{ publication.title }}</a>
+        {% else %}
+        {{ publication.title }}
+        {% endif %}
+      </h3>
+      <p class="publication-authors">{{ publication.authors }}</p>
+      <p class="publication-venue">{{ publication.venue }}</p>
+      <p class="publication-summary">{{ publication.summary }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>

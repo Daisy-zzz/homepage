@@ -1,0 +1,193 @@
+---
+layout: default
+title: Home
+description: Academic homepage for Zhizhen Zhang, built as a GitHub Pages friendly Jekyll site.
+permalink: /
+---
+{% assign featured_publications = site.data.publications | slice: 0, 6 %}
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">{{ site.data.profile.focus_line }}</p>
+    <h1>{{ site.data.profile.hero_title }}</h1>
+    <p class="lead">{{ site.data.profile.lead }}</p>
+    <div class="hero-meta">
+      <span>GitHub Pages ready</span>
+      <span>Open-source Jekyll structure</span>
+      <span>Academic profile template</span>
+    </div>
+    <div class="hero-actions">
+      <a class="button primary" href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">Google Scholar</a>
+      <a class="button secondary" href="{{ '/publications/' | relative_url }}">View Publications</a>
+    </div>
+  </div>
+
+  <aside class="hero-panel" aria-label="Profile highlights">
+    <div class="hero-visual">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-core">
+        <span class="hero-core-label">Research Core</span>
+        <strong>Embodied AI</strong>
+      </div>
+      <div class="hero-node node-a">
+        <span>Video</span>
+        <strong>Long-form reasoning</strong>
+      </div>
+      <div class="hero-node node-b">
+        <span>Action</span>
+        <strong>Generalist agents</strong>
+      </div>
+      <div class="hero-node node-c">
+        <span>Language</span>
+        <strong>Grounded representation</strong>
+      </div>
+    </div>
+    <div class="metric-card">
+      <span class="metric-label">Affiliation</span>
+      <strong>{{ site.data.profile.affiliation }}</strong>
+      <p>{{ site.data.profile.department }}</p>
+    </div>
+  </aside>
+</section>
+
+<section class="signal-strip" aria-label="Profile snapshot">
+  <article class="signal-card">
+    <span class="signal-label">Scholar Citations</span>
+    <strong>{{ site.data.profile.citations }}</strong>
+    <p>Public profile snapshot from the linked Google Scholar page.</p>
+  </article>
+  <article class="signal-card">
+    <span class="signal-label">Selected Works</span>
+    <strong>{{ site.data.publications.size }}</strong>
+    <p>Recent visible publications rendered from structured site data.</p>
+  </article>
+  <article class="signal-card">
+    <span class="signal-label">Deploy Target</span>
+    <strong>GitHub Pages</strong>
+    <p>Built as a public-facing Jekyll site for easy publishing from a repository.</p>
+  </article>
+</section>
+
+<section class="content-grid">
+  <article class="panel panel-wide">
+    <div class="section-heading">
+      <p class="section-kicker">Bio</p>
+      <h2>Academic overview</h2>
+    </div>
+    <div class="prose">
+      <p>{{ site.data.profile.bio_paragraph_1 }}</p>
+      <p>{{ site.data.profile.bio_paragraph_2 }}</p>
+    </div>
+  </article>
+
+  <aside class="panel">
+    <div class="section-heading">
+      <p class="section-kicker">Research</p>
+      <h2>Focus areas</h2>
+    </div>
+    <ul class="focus-list">
+      {% for area in site.data.profile.focus_areas %}
+      <li>
+        <strong>{{ area.name }}</strong>
+        <span>{{ area.description }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
+</section>
+
+<section class="template-grid">
+  <article class="panel template-panel">
+    <div class="section-heading">
+      <p class="section-kicker">Research Directions</p>
+      <h2>Current technical threads</h2>
+    </div>
+    <div class="thread-grid">
+      <div class="thread-card">
+        <span class="thread-index">01</span>
+        <h3>Embodied generalization</h3>
+        <p>Learning transferable vision-language-action representations that remain stable across tasks, skills, and instructions.</p>
+      </div>
+      <div class="thread-card">
+        <span class="thread-index">02</span>
+        <h3>Temporal reasoning</h3>
+        <p>Capturing order, continuity, and long-range dependencies in videos, retrieval settings, and sequential decision problems.</p>
+      </div>
+      <div class="thread-card">
+        <span class="thread-index">03</span>
+        <h3>Efficient perception</h3>
+        <p>Reducing redundancy and improving robustness in real-world multimodal and video-centric machine learning systems.</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="panel template-panel">
+    <div class="section-heading">
+      <p class="section-kicker">Academic Template</p>
+      <h2>Open-source style structure</h2>
+    </div>
+    <ul class="template-list">
+      <li>Persistent academic sidebar with profile summary, contact entry points, and quick facts.</li>
+      <li>Homepage sections organized like a faculty or lab site rather than a single landing page.</li>
+      <li>Structured Jekyll content model with reusable data for profile details and publications.</li>
+      <li>Easy to extend with talks, teaching, students, CV, grants, or full publication pages.</li>
+    </ul>
+  </article>
+</section>
+
+<section class="panel">
+  <div class="section-heading section-heading-row">
+    <div>
+      <p class="section-kicker">Highlights</p>
+      <h2>Selected updates</h2>
+    </div>
+  </div>
+  <div class="highlights-grid">
+    {% for item in site.data.highlights %}
+    <article class="highlight-card">
+      <span class="highlight-date">{{ item.date }}</span>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.summary }}</p>
+      {% if item.url %}
+      <a href="{{ item.url }}" target="_blank" rel="noreferrer">Learn more</a>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="panel publications-panel">
+  <div class="section-heading section-heading-row">
+    <div>
+      <p class="section-kicker">Publications</p>
+      <h2>Selected publications</h2>
+      <p class="section-intro">
+        A curated set of recent visible publications rendered into a GitHub Pages compatible homepage.
+      </p>
+    </div>
+    <a class="button secondary compact-button" href="{{ '/publications/' | relative_url }}">Full list</a>
+  </div>
+
+  <div class="publication-list">
+    {% for publication in featured_publications %}
+    <article class="publication-card">
+      <div class="publication-meta">
+        <span class="publication-year">{{ publication.year }}</span>
+        <span>{{ publication.citations }}</span>
+        <span class="publication-tag">{{ publication.area }}</span>
+      </div>
+      <h3 class="publication-title">
+        {% if publication.url %}
+        <a href="{{ publication.url }}" target="_blank" rel="noreferrer">{{ publication.title }}</a>
+        {% else %}
+        {{ publication.title }}
+        {% endif %}
+      </h3>
+      <p class="publication-authors">{{ publication.authors }}</p>
+      <p class="publication-venue">{{ publication.venue }}</p>
+      <p class="publication-summary">{{ publication.summary }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
