@@ -1,7 +1,7 @@
 title: Zhizhen Zhang
 description: Academic homepage for Zhizhen Zhang, focused on embodied AI, multimodal learning, and video understanding.
-url: "https://YOUR_GITHUB_USERNAME.github.io"
-baseurl: ""
+url: "https://daisy-zzz.github.io"
+baseurl: "/homepage"
 timezone: Australia/Brisbane
 markdown: kramdown
 permalink: pretty
