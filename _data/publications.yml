@@ -1,50 +1,50 @@
-- title: MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent
-  authors: Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo
-  venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
+- title: "MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent"
+  authors: "Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo"
+  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025"
   year: 2025
-  citations: 6 citations
-  area: Embodied AI
-  summary: Explores cross-skill model merging toward more general vision-language-action behavior.
-- title: Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents
-  authors: Z Zhang, L Zhu, Z Fang, Z Huang, Y Luo
-  venue: Annual Conference on Neural Information Processing Systems (NeurIPS), 2025
+  citations: "6 citations"
+  area: "Embodied AI"
+  summary: "Explores cross-skill model merging toward more general vision-language-action behavior."
+- title: "Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents"
+  authors: "Z Zhang, L Zhu, Z Fang, Z Huang, Y Luo"
+  venue: "Annual Conference on Neural Information Processing Systems (NeurIPS), 2025"
   year: 2025
-  citations: 2 citations
-  area: Multimodal Learning
+  citations: "2 citations"
+  area: "Multimodal Learning"
   url: https://actol-pretrain.github.io/
-  summary: Studies temporal ordering and continuity objectives for stronger embodied agent pretraining.
-- title: Contrastive Learning for Implicit Social Factors in Social Media Popularity Prediction
-  authors: Z Zhang, R Qiu, X Xie
-  venue: arXiv preprint arXiv:2410.09345, 2024
+  summary: "Studies temporal ordering and continuity objectives for stronger embodied agent pretraining."
+- title: "Contrastive Learning for Implicit Social Factors in Social Media Popularity Prediction"
+  authors: "Z Zhang, R Qiu, X Xie"
+  venue: "arXiv preprint arXiv:2410.09345, 2024"
   year: 2024
-  citations: 4 citations
-  area: Networked Intelligence
-  summary: Models hidden social factors that influence popularity prediction in social platforms.
-- title: Hiercas: Hierarchical Temporal Graph Attention Networks for Popularity Prediction in Information Cascades
-  authors: Z Zhang, X Xie, Y Zhang, L Zhang, Y Jiang
-  venue: 2024 International Joint Conference on Neural Networks (IJCNN), 2024
+  citations: "4 citations"
+  area: "Networked Intelligence"
+  summary: "Models hidden social factors that influence popularity prediction in social platforms."
+- title: "Hiercas: Hierarchical Temporal Graph Attention Networks for Popularity Prediction in Information Cascades"
+  authors: "Z Zhang, X Xie, Y Zhang, L Zhang, Y Jiang"
+  venue: "2024 International Joint Conference on Neural Networks (IJCNN), 2024"
   year: 2024
-  citations: 3 citations
-  area: Networked Intelligence
-  summary: Uses hierarchical temporal graph attention to reason over information cascades.
-- title: Resolving Spurious Temporal Location Dependency for Video Corpus Moment Retrieval
-  authors: Y Zhang, L Zhang, Z Zhang, Z Wang, X Xie, W Wang
-  venue: 2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2024
+  citations: "3 citations"
+  area: "Networked Intelligence"
+  summary: "Uses hierarchical temporal graph attention to reason over information cascades."
+- title: "Resolving Spurious Temporal Location Dependency for Video Corpus Moment Retrieval"
+  authors: "Y Zhang, L Zhang, Z Zhang, Z Wang, X Xie, W Wang"
+  venue: "2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2024"
   year: 2024
-  citations: New entry
-  area: Video Understanding
-  summary: Addresses temporal shortcut behavior in moment retrieval over video corpora.
-- title: View while Moving: Efficient Video Recognition in Long-Untrimmed Videos
-  authors: Y Tian, M Yang, L Zhang, Z Zhang, Y Liu, X Xie, X Que, W Wang
-  venue: Proceedings of the 31st ACM International Conference on Multimedia, 2023
+  citations: "New entry"
+  area: "Video Understanding"
+  summary: "Addresses temporal shortcut behavior in moment retrieval over video corpora."
+- title: "View while Moving: Efficient Video Recognition in Long-Untrimmed Videos"
+  authors: "Y Tian, M Yang, L Zhang, Z Zhang, Y Liu, X Xie, X Que, W Wang"
+  venue: "Proceedings of the 31st ACM International Conference on Multimedia, 2023"
   year: 2023
-  citations: 11 citations
-  area: Video Understanding
-  summary: Focuses on efficient recognition strategies for long and untrimmed video streams.
-- title: Edge-Assisted Real-Time Video Analytics with Spatial-Temporal Redundancy Suppression
-  authors: Z Wang, X He, Z Zhang, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui
-  venue: IEEE Internet of Things Journal 10 (7), 6324-6335, 2022
+  citations: "11 citations"
+  area: "Video Understanding"
+  summary: "Focuses on efficient recognition strategies for long and untrimmed video streams."
+- title: "Edge-Assisted Real-Time Video Analytics with Spatial-Temporal Redundancy Suppression"
+  authors: "Z Wang, X He, Z Zhang, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui"
+  venue: "IEEE Internet of Things Journal 10 (7), 6324-6335, 2022"
   year: 2022
-  citations: 32 citations
-  area: Systems
-  summary: Proposes real-time video analytics with redundancy suppression in edge-assisted settings.
+  citations: "32 citations"
+  area: "Systems"
+  summary: "Proposes real-time video analytics with redundancy suppression in edge-assisted settings."
