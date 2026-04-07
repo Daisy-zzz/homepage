@@ -1,3 +1,16 @@
+- title: "AnchorVLA: Anchored Diffusion for Efficient End-to-End Mobile Manipulation"
+  authors: "J S Lim, Z Zhang, P Bohm, B Tidd, Z Huang, Y Luo"
+  authors_html: "J S Lim, <strong>Zhizhen Zhang</strong>, P Bohm, B Tidd, Z Huang, Y Luo"
+  venue: "arXiv preprint arXiv:2604.01567, 2026"
+  year: 2026
+  citations: "New entry"
+  area: "Embodied AI, Mobile Manipulation, Vision-Language-Action"
+  homepage_selected: true
+  selection_note: "Under review"
+  url: https://arxiv.org/abs/2604.01567
+  teaser_image: "/assets/img/anchorvla_teaser.png"
+  summary: "Introduces an anchored diffusion VLA policy for efficient end-to-end mobile manipulation with low-latency closed-loop control."
+  
 - title: "MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent"
   authors: "Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo"
   authors_html: "Y Fu, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Wang, Z Huang, Y Luo"
@@ -12,18 +25,7 @@
   teaser_alt: "Teaser image for MergeVLA"
   note: "Co-first author."
   summary: "Explores cross-skill model merging toward more general vision-language-action behavior."
-- title: "AnchorVLA: Anchored Diffusion for Efficient End-to-End Mobile Manipulation"
-  authors: "J S Lim, Z Zhang, P Bohm, B Tidd, Z Huang, Y Luo"
-  authors_html: "J S Lim, <strong>Zhizhen Zhang</strong>, P Bohm, B Tidd, Z Huang, Y Luo"
-  venue: "arXiv preprint arXiv:2604.01567, 2026"
-  year: 2026
-  citations: "New entry"
-  area: "Embodied AI, Mobile Manipulation, Vision-Language-Action"
-  homepage_selected: true
-  selection_note: "Under review"
-  url: https://arxiv.org/abs/2604.01567
-  teaser_image: "/assets/img/anchorvla_teaser.png"
-  summary: "Introduces an anchored diffusion VLA policy for efficient end-to-end mobile manipulation with low-latency closed-loop control."
+
 - title: "Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents"
   authors: "Z Zhang, L Zhu, Z Fang, Z Huang, Y Luo"
   authors_html: "<strong>Zhizhen Zhang</strong>, L Zhu, Z Fang, Z Huang, Y Luo"
