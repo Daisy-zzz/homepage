@@ -115,6 +115,11 @@ a:focus-visible {
   color: #4b5563;
 }
 
+.about-supervisors {
+  margin: 0 0 0.95rem;
+  color: #4b5563;
+}
+
 .about-content p {
   margin: 0 0 0.95rem;
 }

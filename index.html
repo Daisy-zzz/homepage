@@ -24,11 +24,14 @@ permalink: /
     <h1 class="about-title">{{ site.title }}</h1>
     <p class="about-affiliation">{{ site.data.profile.affiliation }}.</p>
     <p>{{ site.data.profile.lead }}</p>
+    <p class="about-supervisors">
+      Supervised by
+      {% for supervisor in site.data.profile.supervisors %}
+      <a href="{{ supervisor.url }}" target="_blank" rel="noreferrer">{{ supervisor.name }}</a>{% if forloop.last == false %}{% if forloop.length == 2 and forloop.index == 1 %} and {% else %}, {% endif %}{% endif %}
+      {% endfor %}.
+    </p>
     <p>{{ site.data.profile.bio_paragraph_1 }}</p>
     <p>{{ site.data.profile.bio_paragraph_2 }}</p>
-    <p>
-      He received his master's degree from Tsinghua University and is broadly interested in building generalized embodied agents.
-    </p>
   </div>
 </section>
 
