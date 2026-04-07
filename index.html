@@ -65,13 +65,15 @@ permalink: /
     {% if publication.homepage_selected %}
     <li class="publication-plain-item">
       {% if publication.teaser_image and publication.teaser_image != "" %}
-      <img
-        class="publication-teaser-image"
-        src="{{ publication.teaser_image | relative_url }}"
-        alt="{{ publication.teaser_alt | default: publication.title }}"
-      />
+      <div class="publication-teaser-frame">
+        <img
+          class="publication-teaser-image"
+          src="{{ publication.teaser_image | relative_url }}"
+          alt="{{ publication.teaser_alt | default: publication.title }}"
+        />
+      </div>
       {% else %}
-      <div class="publication-teaser-empty" aria-hidden="true"></div>
+      <div class="publication-teaser-frame publication-teaser-empty" aria-hidden="true"></div>
       {% endif %}
       <div class="publication-plain-content">
         <div class="publication-plain-meta">
