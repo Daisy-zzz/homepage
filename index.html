@@ -4,7 +4,7 @@ title: Home
 description: Academic homepage for Zhizhen Zhang, built as a GitHub Pages friendly Jekyll site.
 permalink: /
 ---
-{% assign featured_publications = site.data.publications | slice: 0, 6 %}
+{% assign selected_publications = site.data.publications | where_exp: "item", "item.core_rank == 'A*' or item.core_rank == 'A'" %}
 
 <section class="about-grid">
   <aside class="about-sidebar">
@@ -53,10 +53,21 @@ permalink: /
 
 <section class="simple-section">
   <h2 class="section-title">Selected Publications</h2>
+  <p class="section-subtitle">
+    Highlighting publications in CORE-ranked A and A* venues.
+    <a href="{{ '/publications/' | relative_url }}">View all publications</a>
+    or
+    <a href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">see Google Scholar</a>.
+  </p>
   <ol class="publication-plain-list">
-    {% for publication in featured_publications %}
+    {% for publication in selected_publications %}
     <li class="publication-plain-item">
-      <div class="publication-plain-meta">{{ publication.venue }}</div>
+      <div class="publication-plain-meta">
+        {{ publication.venue }}
+        {% if publication.core_rank %}
+        <span class="rank-badge">CORE {{ publication.core_rank }}</span>
+        {% endif %}
+      </div>
       <h3 class="publication-plain-title">
         {% if publication.url %}
         <a href="{{ publication.url }}" target="_blank" rel="noreferrer">{{ publication.title }}</a>

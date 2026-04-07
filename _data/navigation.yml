@@ -1,8 +1,6 @@
 main:
   - title: about
     url: /
-  - title: bio
-    url: /bio/
   - title: publications
     url: /publications/
   - title: links

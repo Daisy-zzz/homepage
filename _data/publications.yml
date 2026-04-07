@@ -4,6 +4,7 @@
   year: 2025
   citations: "6 citations"
   area: "Embodied AI"
+  core_rank: "A*"
   summary: "Explores cross-skill model merging toward more general vision-language-action behavior."
 - title: "Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents"
   authors: "Z Zhang, L Zhu, Z Fang, Z Huang, Y Luo"
@@ -11,6 +12,7 @@
   year: 2025
   citations: "2 citations"
   area: "Multimodal Learning"
+  core_rank: "A*"
   url: https://actol-pretrain.github.io/
   summary: "Studies temporal ordering and continuity objectives for stronger embodied agent pretraining."
 - title: "Contrastive Learning for Implicit Social Factors in Social Media Popularity Prediction"
@@ -26,6 +28,7 @@
   year: 2024
   citations: "3 citations"
   area: "Networked Intelligence"
+  core_rank: "B"
   summary: "Uses hierarchical temporal graph attention to reason over information cascades."
 - title: "Resolving Spurious Temporal Location Dependency for Video Corpus Moment Retrieval"
   authors: "Y Zhang, L Zhang, Z Zhang, Z Wang, X Xie, W Wang"
@@ -40,6 +43,7 @@
   year: 2023
   citations: "11 citations"
   area: "Video Understanding"
+  core_rank: "A*"
   summary: "Focuses on efficient recognition strategies for long and untrimmed video streams."
 - title: "Edge-Assisted Real-Time Video Analytics with Spatial-Temporal Redundancy Suppression"
   authors: "Z Wang, X He, Z Zhang, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui"

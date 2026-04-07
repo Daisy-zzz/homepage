@@ -2,7 +2,7 @@ body {
   margin: 0;
   color: #222;
   background: #fff;
-  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.7;
 }
 
@@ -89,7 +89,7 @@ a:focus-visible {
   border-radius: 8px;
   background: linear-gradient(180deg, #f3f4f6, #e5e7eb);
   color: #374151;
-  font-family: "Source Serif 4", Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -102,7 +102,7 @@ a:focus-visible {
 
 .about-title {
   margin: 0;
-  font-family: "Source Serif 4", Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
   font-size: 2.3rem;
   line-height: 1.15;
   color: #111827;
@@ -123,9 +123,15 @@ a:focus-visible {
 
 .section-title {
   margin: 0 0 0.9rem;
-  font-family: "Source Serif 4", Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
   font-size: 1.7rem;
   color: #111827;
+}
+
+.section-subtitle {
+  margin: -0.2rem 0 1rem;
+  color: #4b5563;
+  font-size: 0.98rem;
 }
 
 .news-list {
@@ -178,6 +184,18 @@ a:focus-visible {
   font-size: 0.92rem;
 }
 
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #1a5fb4;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 .publication-plain-title {
   margin: 0.2rem 0 0.25rem;
   font-size: 1.08rem;
@@ -213,7 +231,7 @@ a:focus-visible {
 
 .page-title {
   margin: 0.3rem 0 0;
-  font-family: "Source Serif 4", Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
   font-size: 2rem;
   color: #111827;
 }
@@ -242,7 +260,7 @@ a:focus-visible {
 
 .section-heading h2 {
   margin: 0.25rem 0 0;
-  font-family: "Source Serif 4", Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
   font-size: 1.5rem;
   color: #111827;
 }
@@ -299,8 +317,59 @@ a:focus-visible {
 
 .thread-card h3 {
   margin: 0.3rem 0 0.35rem;
-  font-family: "Source Serif 4", Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
   font-size: 1.15rem;
+}
+
+.publication-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.publication-card {
+  padding: 1rem 1.1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.publication-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.92rem;
+}
+
+.publication-year,
+.publication-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #4b5563;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.publication-rank {
+  background: #eef4ff;
+  color: #1a5fb4;
+}
+
+.publication-title {
+  margin: 0.45rem 0 0.2rem;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.18rem;
+  line-height: 1.45;
+}
+
+.publication-authors,
+.publication-venue,
+.publication-summary {
+  margin: 0.2rem 0 0;
+  color: #4b5563;
 }
 
 .thread-card p {

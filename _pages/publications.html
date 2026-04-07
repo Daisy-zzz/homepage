@@ -7,9 +7,9 @@ permalink: /publications/
 
 <section class="page-hero">
   <p class="eyebrow">Publications</p>
-  <h1 class="page-title">Selected research outputs</h1>
+  <h1 class="page-title">All publications</h1>
   <p class="lead">
-    This page lists the visible publications used to seed the homepage. The full and more
+    This page lists the publications currently included in the site data. The most complete and
     frequently updated record remains on Google Scholar.
   </p>
 </section>
@@ -20,7 +20,7 @@ permalink: /publications/
       <p class="section-kicker">Publication List</p>
       <h2>Chronological overview</h2>
     </div>
-    <a class="button secondary compact-button" href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">Scholar profile</a>
+    <a class="button secondary compact-button" href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">All publications on Scholar</a>
   </div>
 
   <div class="publication-list">
@@ -30,6 +30,9 @@ permalink: /publications/
         <span class="publication-year">{{ publication.year }}</span>
         <span>{{ publication.citations }}</span>
         <span class="publication-tag">{{ publication.area }}</span>
+        {% if publication.core_rank %}
+        <span class="publication-tag publication-rank">CORE {{ publication.core_rank }}</span>
+        {% endif %}
       </div>
       <h3 class="publication-title">
         {% if publication.url %}
