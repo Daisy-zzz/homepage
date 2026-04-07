@@ -192,7 +192,7 @@ a:focus-visible {
 
 .publication-teaser-image {
   display: block;
-  width: 100%;
+  width: 80%;
   aspect-ratio: 16 / 9;
   border: 1px solid #dbe3ee;
   border-radius: 10px;
