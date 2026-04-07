@@ -4,7 +4,7 @@
   venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026"
   year: 2026
   citations: "6 citations"
-  area: "Embodied AI"
+  area: "Embodied AI, Model Merging, Multi-task Learning"
   core_rank: "A*"
   homepage_selected: true
   url: https://mergevla.github.io/
@@ -16,7 +16,7 @@
   venue: "Annual Conference on Neural Information Processing Systems (NeurIPS), 2025"
   year: 2025
   citations: "2 citations"
-  area: "Multimodal Learning"
+  area: "Embodied AI, Vision-Language Pre-training, Self-supervised Learning"
   core_rank: "A*"
   homepage_selected: true
   url: https://actol-pretrain.github.io/
