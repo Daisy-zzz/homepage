@@ -23,12 +23,11 @@ permalink: /
   <div class="about-content">
     <h1 class="about-title">{{ site.title }}</h1>
     <p class="about-affiliation">{{ site.data.profile.affiliation }}.</p>
-    <p>{{ site.data.profile.lead }}</p>
-    <p class="about-supervisors">
-      Supervised by
+    <p>
+      {{ site.data.profile.lead_prefix }}
       {% for supervisor in site.data.profile.supervisors %}
       <a href="{{ supervisor.url }}" target="_blank" rel="noreferrer">{{ supervisor.name }}</a>{% if forloop.last == false %}{% if forloop.length == 2 and forloop.index == 1 %} and {% else %}, {% endif %}{% endif %}
-      {% endfor %}.
+      {% endfor %}. {{ site.data.profile.lead_suffix }}
     </p>
     <p>{{ site.data.profile.bio_paragraph_1 }}</p>
     <p>{{ site.data.profile.bio_paragraph_2 }}</p>

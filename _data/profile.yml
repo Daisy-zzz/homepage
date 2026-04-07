@@ -1,6 +1,7 @@
 focus_line: Embodied AI · Computer Vision · Robotics
 hero_title: Academic systems for perception, action, and temporal intelligence.
-lead: Zhizhen Zhang is a second-year PhD student in the School of Electrical Engineering and Computer Science at The University of Queensland, supervised by Dr. Yadan Luo and Prof Helen Huang. He received his master's degree from Tsinghua University. His current research focuses on embodied AI, computer vision, and robotics.
+lead_prefix: "Zhizhen Zhang is a second-year PhD student in the School of Electrical Engineering and Computer Science at The University of Queensland, supervised by"
+lead_suffix: "He received his master's degree from Tsinghua University. His current research focuses on embodied AI, computer vision, and robotics."
 affiliation: The University of Queensland
 department: School of Electrical Engineering and Computer Science
 email: zhizhen.zhang@uq.edu.au
