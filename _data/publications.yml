@@ -59,7 +59,7 @@
   area: "Video Understanding"
   core_rank: "A*"
   homepage_selected: true
-  teaser_image: ""
+  teaser_image: "/assets/img/view_teaser.png"
   teaser_alt: "Teaser image for View while Moving"
   summary: "Focuses on efficient recognition strategies for long and untrimmed video streams."
 - title: "Edge-Assisted Real-Time Video Analytics with Spatial-Temporal Redundancy Suppression"
@@ -71,6 +71,6 @@
   area: "Systems"
   homepage_selected: true
   selection_note: "JCR IF 8.9"
-  teaser_image: ""
+  teaser_image: "/assets/img/edge_teaser.png"
   teaser_alt: "Teaser image for edge-assisted real-time video analytics"
   summary: "Proposes real-time video analytics with redundancy suppression in edge-assisted settings."
