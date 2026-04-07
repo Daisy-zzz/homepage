@@ -64,31 +64,44 @@ permalink: /
     {% for publication in site.data.publications %}
     {% if publication.homepage_selected %}
     <li class="publication-plain-item">
-      <div class="publication-plain-meta">
-        {{ publication.venue }}
-        {% if publication.core_rank %}
-        <span class="rank-badge">CORE {{ publication.core_rank }}</span>
-        {% endif %}
-        {% if publication.selection_note %}
-        <span class="rank-badge journal-badge">{{ publication.selection_note }}</span>
-        {% endif %}
+      {% if publication.teaser_image and publication.teaser_image != "" %}
+      <img
+        class="publication-teaser-image"
+        src="{{ publication.teaser_image | relative_url }}"
+        alt="{{ publication.teaser_alt | default: publication.title }}"
+      />
+      {% else %}
+      <div class="publication-teaser-placeholder" aria-hidden="true">
+        <span>Teaser Placeholder</span>
       </div>
-      <h3 class="publication-plain-title">
-        {% if publication.url %}
-        <a href="{{ publication.url }}" target="_blank" rel="noreferrer">{{ publication.title }}</a>
-        {% else %}
-        {{ publication.title }}
-        {% endif %}
-      </h3>
-      <p class="publication-plain-authors">{{ publication.authors_html | default: publication.authors }}</p>
-      {% if publication.note %}
-      <p class="publication-note">{{ publication.note }}</p>
       {% endif %}
-      <p class="publication-plain-links">
-        <span>{{ publication.year }}</span>
-        <span>{{ publication.area }}</span>
-        <span>{{ publication.citations }}</span>
-      </p>
+      <div class="publication-plain-content">
+        <div class="publication-plain-meta">
+          {{ publication.venue }}
+          {% if publication.core_rank %}
+          <span class="rank-badge">CORE {{ publication.core_rank }}</span>
+          {% endif %}
+          {% if publication.selection_note %}
+          <span class="rank-badge journal-badge">{{ publication.selection_note }}</span>
+          {% endif %}
+        </div>
+        <h3 class="publication-plain-title">
+          {% if publication.url %}
+          <a href="{{ publication.url }}" target="_blank" rel="noreferrer">{{ publication.title }}</a>
+          {% else %}
+          {{ publication.title }}
+          {% endif %}
+        </h3>
+        <p class="publication-plain-authors">{{ publication.authors_html | default: publication.authors }}</p>
+        {% if publication.note %}
+        <p class="publication-note">{{ publication.note }}</p>
+        {% endif %}
+        <p class="publication-plain-links">
+          <span>{{ publication.year }}</span>
+          <span>{{ publication.area }}</span>
+          <span>{{ publication.citations }}</span>
+        </p>
+      </div>
     </li>
     {% endif %}
     {% endfor %}
