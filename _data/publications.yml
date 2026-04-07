@@ -4,20 +4,20 @@
   venue: "arXiv preprint arXiv:2604.01567, 2026"
   year: 2026
   citations: "New entry"
-  area: "Embodied AI, Mobile Manipulation, Vision-Language-Action"
+  area: "VLA model, Mobile Manipulation, Self-Correction"
   homepage_selected: true
   selection_note: "Under review"
   url: https://arxiv.org/abs/2604.01567
   teaser_image: "/assets/img/anchorvla_teaser.png"
   summary: "Introduces an anchored diffusion VLA policy for efficient end-to-end mobile manipulation with low-latency closed-loop control."
-  
+
 - title: "MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent"
   authors: "Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo"
   authors_html: "Y Fu, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Wang, Z Huang, Y Luo"
   venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026"
   year: 2026
   citations: "6 citations"
-  area: "Embodied AI, Model Merging, Multi-task Learning"
+  area: "VLA model, Model Merging, Multi-task Learning"
   core_rank: "A*"
   homepage_selected: true
   url: https://mergevla.github.io/
@@ -32,7 +32,7 @@
   venue: "Annual Conference on Neural Information Processing Systems (NeurIPS), 2025"
   year: 2025
   citations: "2 citations"
-  area: "Embodied AI, Vision-Language Pre-training, Self-supervised Learning"
+  area: "Vision-Language Pre-training for Robotics, Self-supervised Learning"
   core_rank: "A*"
   homepage_selected: true
   url: https://actol-pretrain.github.io/
