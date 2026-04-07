@@ -184,7 +184,7 @@ a:focus-visible {
 
 .publication-plain-item {
   display: grid;
-  grid-template-columns: 148px minmax(0, 1fr);
+  grid-template-columns: 168px minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
   margin-bottom: 1.4rem;
@@ -193,8 +193,7 @@ a:focus-visible {
 .publication-teaser-image {
   display: block;
   width: 100%;
-  min-height: 158px;
-  aspect-ratio: 16 / 10;
+  height: 180px;
   border: 1px solid #dbe3ee;
   border-radius: 10px;
   object-fit: cover;
@@ -203,7 +202,7 @@ a:focus-visible {
 
 .publication-teaser-empty {
   width: 100%;
-  min-height: 158px;
+  height: 180px;
   border-radius: 10px;
   background: #fff;
 }
