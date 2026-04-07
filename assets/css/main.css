@@ -184,7 +184,7 @@ a:focus-visible {
 
 .publication-plain-item {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-columns: 124px minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
   margin-bottom: 1.4rem;
@@ -193,7 +193,7 @@ a:focus-visible {
 .publication-teaser-placeholder {
   display: grid;
   place-items: center;
-  min-height: 112px;
+  min-height: 78px;
   border: 1px dashed #cbd5e1;
   border-radius: 10px;
   background: #f8fafc;
@@ -202,7 +202,7 @@ a:focus-visible {
 .publication-teaser-image {
   display: block;
   width: 100%;
-  min-height: 112px;
+  min-height: 78px;
   aspect-ratio: 16 / 10;
   border: 1px solid #dbe3ee;
   border-radius: 10px;
