@@ -53,7 +53,7 @@ permalink: /
 <section class="simple-section">
   <h2 class="section-title">Selected Publications</h2>
   <p class="section-subtitle">
-    Highlighting publications in CORE-ranked A and A* venues.
+    Highlighting publications in CORE-ranked A and A* venues, together with a high-impact journal article.
     <a href="{{ '/publications/' | relative_url }}">View all publications</a>
     or
     <a href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">see Google Scholar</a>.
@@ -66,6 +66,9 @@ permalink: /
         {{ publication.venue }}
         {% if publication.core_rank %}
         <span class="rank-badge">CORE {{ publication.core_rank }}</span>
+        {% endif %}
+        {% if publication.selection_note %}
+        <span class="rank-badge journal-badge">{{ publication.selection_note }}</span>
         {% endif %}
       </div>
       <h3 class="publication-plain-title">

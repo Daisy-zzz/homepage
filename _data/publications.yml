@@ -63,4 +63,6 @@
   year: 2022
   citations: "32 citations"
   area: "Systems"
+  homepage_selected: true
+  selection_note: "JCR IF 8.9"
   summary: "Proposes real-time video analytics with redundancy suppression in edge-assisted settings."

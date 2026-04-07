@@ -197,6 +197,11 @@ a:focus-visible {
   font-weight: 700;
 }
 
+.journal-badge {
+  background: #eefbf4;
+  color: #127a45;
+}
+
 .publication-plain-title {
   margin: 0.2rem 0 0.25rem;
   font-size: 1.08rem;
