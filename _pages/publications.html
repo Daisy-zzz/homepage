@@ -41,7 +41,10 @@ permalink: /publications/
         {{ publication.title }}
         {% endif %}
       </h3>
-      <p class="publication-authors">{{ publication.authors }}</p>
+      <p class="publication-authors">{{ publication.authors_html | default: publication.authors }}</p>
+      {% if publication.note %}
+      <p class="publication-note">{{ publication.note }}</p>
+      {% endif %}
       <p class="publication-venue">{{ publication.venue }}</p>
       <p class="publication-summary">{{ publication.summary }}</p>
     </article>

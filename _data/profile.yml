@@ -1,20 +1,20 @@
-focus_line: Embodied AI · Vision-Language Learning · Video Understanding
+focus_line: Embodied AI · Computer Vision · Robotics
 hero_title: Academic systems for perception, action, and temporal intelligence.
-lead: Zhizhen Zhang is affiliated with the School of Electrical Engineering and Computer Science at The University of Queensland. His recent work spans embodied AI, multimodal representation learning, efficient video analytics, and temporal modeling for complex visual environments.
+lead: Zhizhen Zhang is a PhD student in the School of Electrical Engineering and Computer Science at The University of Queensland. He received his master's degree from Tsinghua University. His current research focuses on embodied AI, computer vision, and robotics.
 affiliation: The University of Queensland
 department: School of Electrical Engineering and Computer Science
 email: zhizhen.zhang@uq.edu.au
 scholar_url: https://scholar.google.com/citations?user=X1sJkM8AAAAJ&hl=en
 uq_url: https://eecs.uq.edu.au/profile/12064/zhizhen-zhang
 citations: "58 citations"
-bio_paragraph_1: Zhizhen Zhang works on machine learning systems that connect visual perception, language grounding, and downstream decision-making. The visible publication record points to a consistent interest in temporally structured data, from efficient long-video recognition to cross-skill model merging for generalist embodied agents.
-bio_paragraph_2: Recent papers focus on embodied AI, vision-language pretraining, temporal graph modeling, and multimodal robustness. This site is organized as a public GitHub Pages academic homepage so the profile, links, and publications can be maintained in a clear open-source structure.
+bio_paragraph_1: Zhizhen Zhang is a PhD student at UQ EECS, where he studies embodied AI, computer vision, and robotics. His long-term goal is to build generalized embodied agents that can perceive, reason, and act robustly in complex real-world environments.
+# bio_paragraph_2: His recent work centers on vision, temporal reasoning, and multimodal perception. Earlier research also touched on video understanding and social media understanding problems.
 focus_areas:
   - name: Embodied AI
-    description: Generalist agents, manipulation-oriented representation learning, and vision-language-action systems.
-  - name: Video Understanding
-    description: Long-form recognition, moment retrieval, temporal localization, and redundancy-aware inference.
-  - name: Multimodal Learning
-    description: Vision-language pretraining, cross-skill transfer, and robust grounded representations.
-  - name: Networked Intelligence
-    description: Popularity prediction, cascade modeling, and learning over dynamic graph-structured signals.
+    description: Generalized embodied agents, action-conditioned learning, and robust decision-making in the physical world.
+  - name: Computer Vision
+    description: Visual perception, scene understanding, and multimodal representation learning for embodied systems.
+  - name: Robotics
+    description: Learning-based robotics with an emphasis on perception, control, and generalization across tasks.
+  - name: Past Interests
+    description: Earlier work also included video understanding and social media prediction problems.
