@@ -212,7 +212,7 @@ a:focus-visible {
 }
 
 .publication-teaser-empty {
-  border-color: transparent;
+  border: 0;
   background: transparent;
   padding: 0;
 }
