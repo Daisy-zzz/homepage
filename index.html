@@ -71,9 +71,7 @@ permalink: /
         alt="{{ publication.teaser_alt | default: publication.title }}"
       />
       {% else %}
-      <div class="publication-teaser-placeholder" aria-hidden="true">
-        <span>Teaser Placeholder</span>
-      </div>
+      <div class="publication-teaser-empty" aria-hidden="true"></div>
       {% endif %}
       <div class="publication-plain-content">
         <div class="publication-plain-meta">
