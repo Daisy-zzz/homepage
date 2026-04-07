@@ -5,6 +5,7 @@
   citations: "6 citations"
   area: "Embodied AI"
   core_rank: "A*"
+  homepage_selected: true
   summary: "Explores cross-skill model merging toward more general vision-language-action behavior."
 - title: "Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents"
   authors: "Z Zhang, L Zhu, Z Fang, Z Huang, Y Luo"
@@ -13,6 +14,7 @@
   citations: "2 citations"
   area: "Multimodal Learning"
   core_rank: "A*"
+  homepage_selected: true
   url: https://actol-pretrain.github.io/
   summary: "Studies temporal ordering and continuity objectives for stronger embodied agent pretraining."
 - title: "Contrastive Learning for Implicit Social Factors in Social Media Popularity Prediction"
@@ -44,6 +46,7 @@
   citations: "11 citations"
   area: "Video Understanding"
   core_rank: "A*"
+  homepage_selected: true
   summary: "Focuses on efficient recognition strategies for long and untrimmed video streams."
 - title: "Edge-Assisted Real-Time Video Analytics with Spatial-Temporal Redundancy Suppression"
   authors: "Z Wang, X He, Z Zhang, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui"
