@@ -17,10 +17,9 @@
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="{{ '/' | relative_url }}">
-          <span class="brand-mark">ZZ</span>
           <span class="brand-copy">
             <strong>{{ site.title }}</strong>
-            <span>Academic Homepage</span>
+            <span>{{ site.data.profile.affiliation }}</span>
           </span>
         </a>
 
@@ -36,61 +35,12 @@
         </nav>
       </header>
 
-      <div class="page-grid">
-        <aside class="profile-sidebar">
-          <section class="sidebar-card profile-card">
-            <p class="sidebar-kicker">Profile</p>
-            <h2>{{ site.title }}</h2>
-            <p class="sidebar-role">{{ site.data.profile.department }}</p>
-            <p class="sidebar-affiliation">{{ site.data.profile.affiliation }}</p>
-            <div class="sidebar-tags">
-              {% for area in site.data.profile.focus_areas limit: 4 %}
-              <span>{{ area.name }}</span>
-              {% endfor %}
-            </div>
-            <div class="sidebar-actions">
-              <a class="button primary" href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">Scholar</a>
-              <a class="button secondary" href="{{ '/links/' | relative_url }}">Contact</a>
-            </div>
-          </section>
-
-          <section class="sidebar-card">
-            <p class="sidebar-kicker">Quick Facts</p>
-            <ul class="sidebar-list">
-              <li>
-                <span>Citations</span>
-                <strong>{{ site.data.profile.citations }}</strong>
-              </li>
-              <li>
-                <span>Homepage Type</span>
-                <strong>GitHub Pages</strong>
-              </li>
-              <li>
-                <span>Profile Source</span>
-                <strong>Scholar + UQ</strong>
-              </li>
-            </ul>
-          </section>
-
-          <section class="sidebar-card">
-            <p class="sidebar-kicker">Navigation</p>
-            <ul class="sidebar-links">
-              {% for item in site.data.navigation.main %}
-              <li>
-                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-          </section>
-        </aside>
-
-        <main id="top" class="page-main{% unless page.url == '/' %} page-main-inner{% endunless %}">
-          {{ content }}
-        </main>
-      </div>
+      <main id="top" class="page-main{% unless page.url == '/' %} page-main-inner{% endunless %}">
+        {{ content }}
+      </main>
 
       <footer class="site-footer">
-        <p>{{ site.title }} · {{ site.data.profile.affiliation }}</p>
+        <p>&copy; Copyright 2026 {{ site.title }}.</p>
         <div class="footer-links">
           <a href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">Google Scholar</a>
           <a href="{{ site.data.profile.uq_url }}" target="_blank" rel="noreferrer">UQ Profile</a>
