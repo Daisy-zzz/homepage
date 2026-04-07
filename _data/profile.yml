@@ -5,9 +5,8 @@ affiliation: The University of Queensland
 department: School of Electrical Engineering and Computer Science
 email: zhizhen.zhang@uq.edu.au
 scholar_url: https://scholar.google.com/citations?user=X1sJkM8AAAAJ&hl=en
-uq_url: https://eecs.uq.edu.au/profile/12064/zhizhen-zhang
 citations: "58 citations"
-bio_paragraph_1: Zhizhen Zhang is a PhD student at UQ EECS, where he studies embodied AI, computer vision, and robotics. His long-term goal is to build generalized embodied agents that can perceive, reason, and act robustly in complex real-world environments.
+bio_paragraph_1: Zhizhen Zhang is a second-year PhD student at UQ EECS, where he studies embodied AI, computer vision, and robotics. His long-term goal is to build generalized embodied agents that can perceive, reason, and act robustly in complex real-world environments.
 # bio_paragraph_2: His recent work centers on vision, temporal reasoning, and multimodal perception. Earlier research also touched on video understanding and social media understanding problems.
 focus_areas:
   - name: Embodied AI
