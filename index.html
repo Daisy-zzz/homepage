@@ -16,22 +16,18 @@ permalink: /
     </div>
     <div class="about-links">
       <a href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">Google Scholar</a>
-      <a href="{{ site.data.profile.uq_url }}" target="_blank" rel="noreferrer">UQ Profile</a>
-      <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+      <span>{{ site.data.profile.email_display }}</span>
     </div>
   </aside>
 
   <div class="about-content">
     <h1 class="about-title">{{ site.title }}</h1>
-    <p class="about-affiliation">
-      <a href="{{ site.data.profile.uq_url }}" target="_blank" rel="noreferrer">{{ site.data.profile.affiliation }}</a>.
-    </p>
+    <p class="about-affiliation">{{ site.data.profile.affiliation }}.</p>
     <p>{{ site.data.profile.lead }}</p>
     <p>{{ site.data.profile.bio_paragraph_1 }}</p>
     <p>{{ site.data.profile.bio_paragraph_2 }}</p>
     <p>
-      Current interests include embodied AI, vision-language pretraining, video understanding,
-      temporal reasoning, and robust multimodal learning systems for real-world environments.
+      He received his master's degree from Tsinghua University and is broadly interested in building generalized embodied agents.
     </p>
   </div>
 </section>
@@ -92,4 +88,52 @@ permalink: /
     {% endif %}
     {% endfor %}
   </ol>
+</section>
+
+<section class="simple-section">
+  <h2 class="section-title">Awards</h2>
+  <div class="record-list">
+    {% for item in site.data.main_sections.awards %}
+    <div class="record-item">
+      <span class="record-year">{{ item.year }}</span>
+      <div class="record-text">{{ item.text }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="simple-section">
+  <h2 class="section-title">Academic Activities</h2>
+  <div class="record-list">
+    {% for item in site.data.main_sections.academic_activities %}
+    <div class="record-item">
+      <span class="record-year">{{ item.year }}</span>
+      <div class="record-text">{{ item.text }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="simple-section">
+  <h2 class="section-title">Professional Services</h2>
+  <div class="record-list">
+    {% for item in site.data.main_sections.professional_services %}
+    <div class="record-item">
+      <span class="record-year">{{ item.year }}</span>
+      <div class="record-text">{{ item.text }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="simple-section">
+  <h2 class="section-title">Teaching Assistantship</h2>
+  <div class="record-list">
+    {% for item in site.data.main_sections.teaching_assistantship %}
+    <div class="record-item">
+      <span class="record-year">{{ item.year }}</span>
+      <div class="record-text">{{ item.text }}</div>
+    </div>
+    {% endfor %}
+  </div>
 </section>
