@@ -22,7 +22,7 @@
   homepage_selected: true
   selection_note: "Under review"
   url: https://arxiv.org/abs/2604.01567
-  teaser_image: "/assets/img/anchorvla_teaser.jpg"
+  teaser_image: "/assets/img/anchorvla_teaser.png"
   summary: "Introduces an anchored diffusion VLA policy for efficient end-to-end mobile manipulation with low-latency closed-loop control."
 - title: "Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents"
   authors: "Z Zhang, L Zhu, Z Fang, Z Huang, Y Luo"
