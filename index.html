@@ -8,7 +8,11 @@ permalink: /
 <section class="about-grid">
   <aside class="about-sidebar">
     <div class="profile-image-card" aria-label="Profile image placeholder">
-      <div class="profile-image">ZZ</div>
+      <img
+        class="profile-image"
+        src="{{ '/assets/img/zhizhen.png' | relative_url }}"
+        alt="Avatar placeholder for Zhizhen Zhang"
+      />
     </div>
     <div class="about-links">
       <a href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">Google Scholar</a>
@@ -75,7 +79,10 @@ permalink: /
         {{ publication.title }}
         {% endif %}
       </h3>
-      <p class="publication-plain-authors">{{ publication.authors }}</p>
+      <p class="publication-plain-authors">{{ publication.authors_html | default: publication.authors }}</p>
+      {% if publication.note %}
+      <p class="publication-note">{{ publication.note }}</p>
+      {% endif %}
       <p class="publication-plain-links">
         <span>{{ publication.year }}</span>
         <span>{{ publication.area }}</span>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar placeholder</title>
+  <desc id="desc">A neutral placeholder portrait card for an academic homepage.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e5e7eb" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="560" rx="24" fill="url(#bg)" />
+  <circle cx="240" cy="180" r="78" fill="#cbd5e1" />
+  <path d="M104 428c22-79 83-126 136-126s114 47 136 126" fill="#cbd5e1" />
+  <rect x="76" y="460" width="328" height="32" rx="16" fill="#dbe4ee" />
+  <text
+    x="240"
+    y="518"
+    text-anchor="middle"
+    font-family="Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="22"
+    fill="#64748b"
+  >
+    Replace with your photo
+  </text>
+</svg>

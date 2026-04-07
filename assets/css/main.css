@@ -81,17 +81,13 @@ a:focus-visible {
 }
 
 .profile-image {
-  display: grid;
-  place-items: center;
+  display: block;
   width: 100%;
   aspect-ratio: 1 / 1.15;
   border: 1px solid #d1d5db;
   border-radius: 8px;
-  background: linear-gradient(180deg, #f3f4f6, #e5e7eb);
-  color: #374151;
-  font-family: "Libre Baskerville", Georgia, serif;
-  font-size: 3rem;
-  font-weight: 700;
+  object-fit: cover;
+  background: #f3f4f6;
 }
 
 .about-links {
@@ -208,6 +204,13 @@ a:focus-visible {
   margin: 0;
   color: #4b5563;
   font-size: 0.96rem;
+}
+
+.publication-note {
+  margin: 0.2rem 0 0;
+  color: #1a5fb4;
+  font-size: 0.92rem;
+  font-style: italic;
 }
 
 .publication-plain-links {
