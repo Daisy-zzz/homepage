@@ -1,90 +1,88 @@
-- title: "AnchorVLA: Anchored Diffusion for Efficient End-to-End Mobile Manipulation"
-  authors: "J S Lim, Z Zhang, P Bohm, B Tidd, Z Huang, Y Luo"
-  authors_html: "J S Lim, <strong>Zhizhen Zhang</strong>, P Bohm, B Tidd, Z Huang, Y Luo"
-  venue: "arXiv preprint arXiv:2604.01567, 2026"
+- title: 'AnchorVLA: Anchored Diffusion for Efficient End-to-End Mobile Manipulation'
+  authors: J S Lim, Z Zhang, P Bohm, B Tidd, Z Huang, Y Luo
+  authors_html: J S Lim, <strong>Zhizhen Zhang</strong>, P Bohm, B Tidd, Z Huang, Y Luo
+  venue: arXiv preprint arXiv:2604.01567, 2026
   year: 2026
-  citations: "New entry"
-  area: "VLA model, Mobile Manipulation, Self-Correction"
+  citations: New entry
+  area: VLA model, Mobile Manipulation, Self-Correction
   homepage_selected: true
-  selection_note: "Under review"
+  selection_note: Under review
   url: https://arxiv.org/abs/2604.01567
-  teaser_image: "/assets/img/anchorvla_teaser.png"
-  summary: "Introduces an anchored diffusion VLA policy for efficient end-to-end mobile manipulation with low-latency closed-loop control."
-
-- title: "MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent"
-  authors: "Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo"
-  authors_html: "Y Fu, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Wang, Z Huang, Y Luo"
-  venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026"
+  teaser_image: /assets/img/anchorvla_teaser.png
+  summary: Introduces an anchored diffusion VLA policy for efficient end-to-end mobile manipulation with low-latency closed-loop control.
+- title: 'MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent'
+  authors: Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo
+  authors_html: Y Fu, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Wang, Z Huang, Y Luo
+  venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
   year: 2026
-  citations: "6 citations"
-  area: "VLA model, Model Merging, Multi-task Learning"
-  core_rank: "A*"
+  citations: New entry
+  area: VLA model, Model Merging, Multi-task Learning
+  core_rank: A*
   homepage_selected: true
   url: https://mergevla.github.io/
-  teaser_image: "/assets/img/mergevla_teaser.jpg"
-  teaser_alt: "Teaser image for MergeVLA"
-  note: "Co-first author."
-  summary: "Explores cross-skill model merging toward more general vision-language-action behavior."
-
-- title: "Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents"
-  authors: "Z Zhang, L Zhu, Z Fang, Z Huang, Y Luo"
-  authors_html: "<strong>Zhizhen Zhang</strong>, L Zhu, Z Fang, Z Huang, Y Luo"
-  venue: "Annual Conference on Neural Information Processing Systems (NeurIPS), 2025"
+  teaser_image: /assets/img/mergevla_teaser.jpg
+  teaser_alt: Teaser image for MergeVLA
+  note: Co-first author.
+  summary: Explores cross-skill model merging toward more general vision-language-action behavior.
+- title: Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents
+  authors: Z Zhang, L Zhu, Z Fang, Z Huang, Y Luo
+  authors_html: <strong>Zhizhen Zhang</strong>, L Zhu, Z Fang, Z Huang, Y Luo
+  venue: Annual Conference on Neural Information Processing Systems (NeurIPS), 2025
   year: 2025
-  citations: "2 citations"
-  area: "Vision-Language Pre-training for Robotics, Self-supervised Learning"
-  core_rank: "A*"
+  citations: New entry
+  area: Vision-Language Pre-training for Robotics, Self-supervised Learning
+  core_rank: A*
   homepage_selected: true
   url: https://actol-pretrain.github.io/
-  teaser_image: "/assets/img/actol_teaser.png"
-  teaser_alt: "Teaser image for ACTOL"
-  summary: "Studies temporal ordering and continuity objectives for stronger embodied agent pretraining."
-- title: "Contrastive Learning for Implicit Social Factors in Social Media Popularity Prediction"
-  authors: "Z Zhang, R Qiu, X Xie"
-  authors_html: "<strong>Zhizhen Zhang</strong>, R Qiu, X Xie"
-  venue: "arXiv preprint arXiv:2410.09345, 2024"
+  teaser_image: /assets/img/actol_teaser.png
+  teaser_alt: Teaser image for ACTOL
+  summary: Studies temporal ordering and continuity objectives for stronger embodied agent pretraining.
+- title: Contrastive Learning for Implicit Social Factors in Social Media Popularity Prediction
+  authors: Z Zhang, R Qiu, X Xie
+  authors_html: <strong>Zhizhen Zhang</strong>, R Qiu, X Xie
+  venue: arXiv preprint arXiv:2410.09345, 2024
   year: 2024
-  citations: "4 citations"
-  area: "Networked Intelligence"
-  summary: "Models hidden social factors that influence popularity prediction in social platforms."
-- title: "Hiercas: Hierarchical Temporal Graph Attention Networks for Popularity Prediction in Information Cascades"
-  authors: "Z Zhang, X Xie, Y Zhang, L Zhang, Y Jiang"
-  authors_html: "<strong>Zhizhen Zhang</strong>, X Xie, Y Zhang, L Zhang, Y Jiang"
-  venue: "2024 International Joint Conference on Neural Networks (IJCNN), 2024"
+  citations: New entry
+  area: Networked Intelligence
+  summary: Models hidden social factors that influence popularity prediction in social platforms.
+- title: 'Hiercas: Hierarchical Temporal Graph Attention Networks for Popularity Prediction in Information Cascades'
+  authors: Z Zhang, X Xie, Y Zhang, L Zhang, Y Jiang
+  authors_html: <strong>Zhizhen Zhang</strong>, X Xie, Y Zhang, L Zhang, Y Jiang
+  venue: 2024 International Joint Conference on Neural Networks (IJCNN), 2024
   year: 2024
-  citations: "3 citations"
-  area: "Networked Intelligence"
-  core_rank: "B"
-  summary: "Uses hierarchical temporal graph attention to reason over information cascades."
-- title: "Resolving Spurious Temporal Location Dependency for Video Corpus Moment Retrieval"
-  authors: "Y Zhang, L Zhang, Z Zhang, Z Wang, X Xie, W Wang"
-  authors_html: "Y Zhang, L Zhang, <strong>Zhizhen Zhang</strong>, Z Wang, X Xie, W Wang"
-  venue: "2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2024"
+  citations: 3 citations
+  area: Networked Intelligence
+  core_rank: B
+  summary: Uses hierarchical temporal graph attention to reason over information cascades.
+- title: Resolving Spurious Temporal Location Dependency for Video Corpus Moment Retrieval
+  authors: Y Zhang, L Zhang, Z Zhang, Z Wang, X Xie, W Wang
+  authors_html: Y Zhang, L Zhang, <strong>Zhizhen Zhang</strong>, Z Wang, X Xie, W Wang
+  venue: 2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2024
   year: 2024
-  citations: "New entry"
-  area: "Video Understanding"
-  summary: "Addresses temporal shortcut behavior in moment retrieval over video corpora."
-- title: "View while Moving: Efficient Video Recognition in Long-Untrimmed Videos"
-  authors: "Y Tian, M Yang, L Zhang, Z Zhang, Y Liu, X Xie, X Que, W Wang"
-  authors_html: "Y Tian, M Yang, L Zhang, <strong>Zhizhen Zhang</strong>, Y Liu, X Xie, X Que, W Wang"
-  venue: "Proceedings of the 31st ACM International Conference on Multimedia, 2023"
+  citations: New entry
+  area: Video Understanding
+  summary: Addresses temporal shortcut behavior in moment retrieval over video corpora.
+- title: 'View while Moving: Efficient Video Recognition in Long-Untrimmed Videos'
+  authors: Y Tian, M Yang, L Zhang, Z Zhang, Y Liu, X Xie, X Que, W Wang
+  authors_html: Y Tian, M Yang, L Zhang, <strong>Zhizhen Zhang</strong>, Y Liu, X Xie, X Que, W Wang
+  venue: Proceedings of the 31st ACM International Conference on Multimedia, 2023
   year: 2023
-  citations: "11 citations"
-  area: "Video Understanding"
-  core_rank: "A*"
+  citations: 8 citations
+  area: Video Understanding
+  core_rank: A*
   homepage_selected: true
-  teaser_image: "/assets/img/view_teaser.png"
-  teaser_alt: "Teaser image for View while Moving"
-  summary: "Focuses on efficient recognition strategies for long and untrimmed video streams."
-- title: "Edge-Assisted Real-Time Video Analytics with Spatial-Temporal Redundancy Suppression"
-  authors: "Z Wang, X He, Z Zhang, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui"
-  authors_html: "Z Wang, X He, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui"
-  venue: "IEEE Internet of Things Journal 10 (7), 6324-6335, 2022"
+  teaser_image: /assets/img/view_teaser.png
+  teaser_alt: Teaser image for View while Moving
+  summary: Focuses on efficient recognition strategies for long and untrimmed video streams.
+- title: Edge-Assisted Real-Time Video Analytics with Spatial-Temporal Redundancy Suppression
+  authors: Z Wang, X He, Z Zhang, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui
+  authors_html: Z Wang, X He, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui
+  venue: IEEE Internet of Things Journal 10 (7), 6324-6335, 2022
   year: 2022
-  citations: "32 citations"
-  area: "Systems"
+  citations: 25 citations
+  area: Systems
   homepage_selected: true
-  selection_note: "JCR IF 8.9"
-  teaser_image: "/assets/img/edge_teaser.png"
-  teaser_alt: "Teaser image for edge-assisted real-time video analytics"
-  summary: "Proposes real-time video analytics with redundancy suppression in edge-assisted settings."
+  selection_note: JCR IF 8.9
+  teaser_image: /assets/img/edge_teaser.png
+  teaser_alt: Teaser image for edge-assisted real-time video analytics
+  summary: Proposes real-time video analytics with redundancy suppression in edge-assisted settings.
