@@ -42,7 +42,7 @@
   authors_html: <strong>Zhizhen Zhang</strong>, R Qiu, X Xie
   venue: arXiv preprint arXiv:2410.09345, 2024
   year: 2024
-  citations: New entry
+  citations: 1 citation
   area: Networked Intelligence
   summary: Models hidden social factors that influence popularity prediction in social platforms.
 - title: 'Hiercas: Hierarchical Temporal Graph Attention Networks for Popularity Prediction in Information Cascades'
