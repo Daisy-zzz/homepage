@@ -1,11 +1,13 @@
 focus_line: Embodied AI · Computer Vision · Robotics
 hero_title: Academic systems for perception, action, and temporal intelligence.
-lead_prefix: Zhizhen Zhang is a second-year PhD student in the School of Electrical Engineering and Computer Science at The University of Queensland, supervised by
-lead_suffix: He received his master's degree from Tsinghua University. His current research focuses on embodied AI, computer vision, and robotics.
+lead_prefix: Zhizhen Zhang is a second-year PhD student in the School of Electrical
+  Engineering and Computer Science at The University of Queensland, supervised by
+lead_suffix: He received his master's degree from Tsinghua University. His current
+  research focuses on embodied AI, computer vision, and robotics.
 affiliation: The University of Queensland
 department: School of Electrical Engineering and Computer Science
 email: zhizhen.zhang@uq.edu.au
-email_display: zzhizhenzzz[at]gmail[dot]com
+email_display: zhizhen.zhang@uq.edu.au
 scholar_url: https://scholar.google.com/citations?user=X1sJkM8AAAAJ&hl=en
 citations: 47 citations
 supervisors:
@@ -15,10 +17,15 @@ supervisors:
   url: https://eecs.uq.edu.au/profile/1436/helen-huang
 focus_areas:
 - name: Embodied AI
-  description: Generalized embodied agents, action-conditioned learning, and robust decision-making in the physical world.
+  description: Generalized embodied agents, action-conditioned learning, and robust
+    decision-making in the physical world.
 - name: Computer Vision
-  description: Visual perception, scene understanding, and multimodal representation learning for embodied systems.
+  description: Visual perception, scene understanding, and multimodal representation
+    learning for embodied systems.
 - name: Robotics
-  description: Learning-based robotics with an emphasis on perception, control, and generalization across tasks.
+  description: Learning-based robotics with an emphasis on perception, control, and
+    generalization across tasks.
 - name: Past Interests
-  description: Earlier work also included video understanding and related prediction problems.
+  description: Earlier work also included video understanding and related prediction
+    problems.
+github_url: https://github.com/daisy-zzz

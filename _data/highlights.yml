@@ -1,9 +1,15 @@
+- date: Jul 2026
+  title: MobiGuide at RSS OWN 2026
+  summary: Our work on vocabulary-guided online recovery appears at the Open World
+    Navigation workshop.
+  url: https://openreview.net/forum?id=jHw4NASZlG
 - date: 2026
   title: MergeVLA appears at CVPR 2026!
-  summary: MergeVLA explores cross-skill model merging toward generalist vision-language-action model.
+  summary: MergeVLA explores cross-skill model merging toward generalist vision-language-action
+    model.
   url: https://mergevla.github.io/
 - date: 2025
   title: AcTOL appears at NeurIPS 2025!
-  summary: AcTOL explores the ordering and continuity in vision-language pretraining with human action data for generalized embodied agents.
+  summary: AcTOL explores the ordering and continuity in vision-language pretraining
+    with human action data for generalized embodied agents.
   url: https://actol-pretrain.github.io/
-

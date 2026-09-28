@@ -1,5 +1,5 @@
 main:
-  - title: about
+  - title: About
     url: /
-  - title: publications
+  - title: Publications
     url: /publications/

@@ -1,23 +1,26 @@
 awards:
-  - year: "2025"
-    text: "Distinguished Poster Award on UQ DS EOY."
-  - year: "2025"
-    text: "UQ Research Training Stipend Earmarked."
-
+- year: '2025'
+  text: Distinguished Poster Award on UQ DS EOY.
+- year: '2025'
+  text: UQ Research Training Stipend Earmarked.
 academic_activities:
-  - year: "2025"
-    text: "3MT presentation at Australasian Database Conference (ADC)."
-  - year: "2025"
-    text: "Showcase at UQ EECS Illuminate."
-  - year: "2025"
-    text: "Co-supervisor for UQ Winter Research Program on the project \"Deploying Learning-Based Locomotion on Unitree Go2 for Embodied AI.\""
-  - year: "2025"
-    text: "Presentation at UQ AI Conference Dry-run Seminar."
-
+- year: '2025'
+  text: 3MT presentation at Australasian Database Conference (ADC).
+- year: '2025'
+  text: Showcase at UQ EECS Illuminate.
+- year: '2025'
+  text: Co-supervisor for UQ Winter Research Program on the project "Deploying Learning-Based
+    Locomotion on Unitree Go2 for Embodied AI."
+- year: '2025'
+  text: Presentation at UQ AI Conference Dry-run Seminar.
 professional_services:
-  - year: "2025-"
-    text: "Reviewer for NeurIPS'25, CVPR'26."
-
+- year: '2027'
+  text: Reviewer · ICLR 2027
+- year: '2026'
+  text: Reviewer · NeurIPS 2026, CVPR 2026
+- year: '2025'
+  text: Reviewer · NeurIPS 2025
 teaching_assistantship:
-  - year: "Sem1, 2026"
-    text: "INFS4205/7205: Advanced Techniques for High Dimensional Data, EECS, University of Queensland."
+- year: Sem1, 2026
+  text: 'INFS4205/7205: Advanced Techniques for High Dimensional Data, EECS, University
+    of Queensland.'

@@ -1,53 +1,30 @@
 ---
+layout: default
 title: Publications
-description: Selected publications for Zhizhen Zhang.
+description: Publications by Zhizhen Zhang in embodied AI, computer vision, robotics, and video understanding.
 permalink: /publications/
 ---
-{% assign publications = site.data.publications | sort: "year" | reverse %}
-
-<section class="page-hero">
-  <p class="eyebrow">Publications</p>
-  <h1 class="page-title">All publications</h1>
-  <p class="lead">
-    This page lists the publications currently included in the site data. The most complete and
-    frequently updated record remains on Google Scholar.
-  </p>
-</section>
-
-<section class="panel">
-  <div class="section-heading section-heading-row">
-    <div>
-      <p class="section-kicker">Publication List</p>
-      <h2>Chronological overview</h2>
+<section class="archive-hero"><p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> RESEARCH ARCHIVE / {{ site.data.publications | size }} RECORDS</p><h1>Publications<span class="accent-dot">.</span></h1><p>Explorations in perception, action, and generalization.</p><a class="text-link" href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noopener noreferrer">View Google Scholar ↗</a></section>
+<div class="archive-toolbar" data-search-tools hidden><label for="publication-search" class="mono">FIND A PAPER</label><input id="publication-search" type="search" placeholder="Search title, topic, venue, or year…" autocomplete="off"><span id="result-count" class="mono" aria-live="polite"></span></div>
+<section class="publications archive-publications" aria-label="Publications in reverse chronological order">{% for publication in site.data.publications %}<article class="publication" data-publication data-search="{{ publication.title | escape }} {{ publication.area | escape }} {{ publication.year }} {{ publication.venue_short | escape }}">
+  {% if publication.teaser_image %}
+  <a class="publication-visual" href="{{ publication.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ publication.title | escape }}">
+    <img src="{{ publication.teaser_image | relative_url }}" alt="{{ publication.teaser_alt | default: publication.title | escape }}" loading="lazy" width="640" height="360">
+    <span class="figure-label" aria-hidden="true">RESEARCH / {{ publication.year }}</span>
+  </a>
+  {% else %}
+  <div class="publication-visual publication-visual-empty" aria-hidden="true"></div>
+  {% endif %}
+  <div class="publication-content">
+    <div class="publication-meta"><span class="venue-label">{{ publication.venue_short | default: publication.venue }}</span>{% if publication.note %}<span class="author-note">{{ publication.note }}</span>{% endif %}</div>
+    <h3>{% if publication.url %}<a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}</h3>
+    <p class="publication-authors">{{ publication.authors_html | default: publication.authors }}</p>
+    <p class="publication-summary">{{ publication.summary }}</p>
+    <div class="paper-links">
+      {% if publication.paper_url %}<a href="{{ publication.paper_url }}" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.project_url %}<a href="{{ publication.project_url }}" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.code_url %}<a href="{{ publication.code_url }}" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>{% endif %}
     </div>
-    <a class="button secondary compact-button" href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">All publications on Scholar</a>
   </div>
-
-  <div class="publication-list">
-    {% for publication in publications %}
-    <article class="publication-card">
-      <div class="publication-meta">
-        <span class="publication-year">{{ publication.year }}</span>
-        <span>{{ publication.citations }}</span>
-        <span class="publication-tag">{{ publication.area }}</span>
-        {% if publication.core_rank %}
-        <span class="publication-tag publication-rank">CORE {{ publication.core_rank }}</span>
-        {% endif %}
-      </div>
-      <h3 class="publication-title">
-        {% if publication.url %}
-        <a href="{{ publication.url }}" target="_blank" rel="noreferrer">{{ publication.title }}</a>
-        {% else %}
-        {{ publication.title }}
-        {% endif %}
-      </h3>
-      <p class="publication-authors">{{ publication.authors_html | default: publication.authors }}</p>
-      {% if publication.note %}
-      <p class="publication-note">{{ publication.note }}</p>
-      {% endif %}
-      <p class="publication-venue">{{ publication.venue }}</p>
-      <p class="publication-summary">{{ publication.summary }}</p>
-    </article>
-    {% endfor %}
-  </div>
-</section>
+</article>{% endfor %}</section>
+<p class="empty-state" id="empty-state" hidden>No matching publications. Try another title, topic, venue, or year.</p>

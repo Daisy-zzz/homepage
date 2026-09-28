@@ -1,15 +1,15 @@
-- title: 'AnchorVLA: Anchored Diffusion for Efficient End-to-End Mobile Manipulation'
-  authors: J S Lim, Z Zhang, P Bohm, B Tidd, Z Huang, Y Luo
-  authors_html: J S Lim, <strong>Zhizhen Zhang</strong>, P Bohm, B Tidd, Z Huang, Y Luo
-  venue: arXiv preprint arXiv:2604.01567, 2026
+- title: 'MobiGuide: Vocabulary-Guided Online Recovery for Mobile Manipulation'
+  authors: Jia Syuen Lim, Zhizhen Zhang, Peter Bohm, Brendan Tidd, Zi Huang, Yadan Luo
+  authors_html: Jia Syuen Lim, <strong>Zhizhen Zhang</strong>, Peter Bohm, Brendan Tidd, Zi Huang, Yadan Luo
+  venue: 'RSS 2026 Workshop: Open World Navigation in the Foundation Model Era (OWN)'
+  venue_short: RSS 2026 · Workshop
   year: 2026
-  citations: New entry
-  area: VLA model, Mobile Manipulation, Self-Correction
+  area: Mobile Manipulation, Online Recovery
   homepage_selected: true
-  selection_note: Under review
-  url: https://arxiv.org/abs/2604.01567
-  teaser_image: /assets/img/anchorvla_teaser.png
-  summary: Introduces an anchored diffusion VLA policy for efficient end-to-end mobile manipulation with low-latency closed-loop control.
+  url: https://openreview.net/forum?id=jHw4NASZlG
+  paper_url: https://openreview.net/forum?id=jHw4NASZlG
+  summary: Guides mobile manipulation with a trajectory vocabulary and online recovery.
+  source_url: https://adacompnus.github.io/open-world-navigation-26/papers/
 - title: 'MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent'
   authors: Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo
   authors_html: Y Fu, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Wang, Z Huang, Y Luo
@@ -24,6 +24,10 @@
   teaser_alt: Teaser image for MergeVLA
   note: Co-first author.
   summary: Explores cross-skill model merging toward more general vision-language-action behavior.
+  venue_short: CVPR · 2026
+  project_url: https://mergevla.github.io/
+  paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Fu_MergeVLA_Cross-Skill_Model_Merging_Toward_a_Generalist_Vision-Language-Action_Agent_CVPR_2026_paper.html
+  code_url: https://github.com/MergeVLA/MergeVLA
 - title: Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents
   authors: Z Zhang, L Zhu, Z Fang, Z Huang, Y Luo
   authors_html: <strong>Zhizhen Zhang</strong>, L Zhu, Z Fang, Z Huang, Y Luo
@@ -37,6 +41,8 @@
   teaser_image: /assets/img/actol_teaser.png
   teaser_alt: Teaser image for ACTOL
   summary: Studies temporal ordering and continuity objectives for stronger embodied agent pretraining.
+  venue_short: NeurIPS · 2025
+  project_url: https://actol-pretrain.github.io/
 - title: Contrastive Learning for Implicit Social Factors in Social Media Popularity Prediction
   authors: Z Zhang, R Qiu, X Xie
   authors_html: <strong>Zhizhen Zhang</strong>, R Qiu, X Xie
@@ -45,6 +51,14 @@
   citations: 1 citation
   area: Networked Intelligence
   summary: Models hidden social factors that influence popularity prediction in social platforms.
+  venue_short: arXiv · 2024
+  url: https://arxiv.org/abs/2410.09345
+  paper_url: https://arxiv.org/abs/2410.09345
+  teaser_image: /assets/img/ppcl_method.png
+  teaser_alt: 'Figure 2: PPCL method overview from the original paper'
+  teaser_source: https://arxiv.org/pdf/2410.09345
+  teaser_figure: Figure 2, page 4
+  code_url: https://github.com/Daisy-zzz/PPCL
 - title: 'Hiercas: Hierarchical Temporal Graph Attention Networks for Popularity Prediction in Information Cascades'
   authors: Z Zhang, X Xie, Y Zhang, L Zhang, Y Jiang
   authors_html: <strong>Zhizhen Zhang</strong>, X Xie, Y Zhang, L Zhang, Y Jiang
@@ -54,6 +68,13 @@
   area: Networked Intelligence
   core_rank: B
   summary: Uses hierarchical temporal graph attention to reason over information cascades.
+  venue_short: IJCNN · 2024
+  teaser_image: /assets/img/hiercas_method.png
+  teaser_alt: 'Figure 1: HierCas architecture from the original paper'
+  teaser_source: https://arxiv.org/pdf/2310.13219
+  teaser_figure: Figure 1, page 4
+  url: https://arxiv.org/abs/2310.13219
+  paper_url: https://arxiv.org/abs/2310.13219
 - title: Resolving Spurious Temporal Location Dependency for Video Corpus Moment Retrieval
   authors: Y Zhang, L Zhang, Z Zhang, Z Wang, X Xie, W Wang
   authors_html: Y Zhang, L Zhang, <strong>Zhizhen Zhang</strong>, Z Wang, X Xie, W Wang
@@ -62,6 +83,9 @@
   citations: New entry
   area: Video Understanding
   summary: Addresses temporal shortcut behavior in moment retrieval over video corpora.
+  venue_short: SMC · 2024
+  url: https://ieeexplore.ieee.org/document/10831283
+  paper_url: https://ieeexplore.ieee.org/document/10831283
 - title: 'View while Moving: Efficient Video Recognition in Long-Untrimmed Videos'
   authors: Y Tian, M Yang, L Zhang, Z Zhang, Y Liu, X Xie, X Que, W Wang
   authors_html: Y Tian, M Yang, L Zhang, <strong>Zhizhen Zhang</strong>, Y Liu, X Xie, X Que, W Wang
@@ -74,6 +98,9 @@
   teaser_image: /assets/img/view_teaser.png
   teaser_alt: Teaser image for View while Moving
   summary: Focuses on efficient recognition strategies for long and untrimmed video streams.
+  venue_short: ACM MM · 2023
+  url: https://arxiv.org/abs/2308.04834
+  paper_url: https://arxiv.org/abs/2308.04834
 - title: Edge-Assisted Real-Time Video Analytics with Spatial-Temporal Redundancy Suppression
   authors: Z Wang, X He, Z Zhang, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui
   authors_html: Z Wang, X He, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui
@@ -86,3 +113,6 @@
   teaser_image: /assets/img/edge_teaser.png
   teaser_alt: Teaser image for edge-assisted real-time video analytics
   summary: Proposes real-time video analytics with redundancy suppression in edge-assisted settings.
+  venue_short: IEEE Internet of Things Journal · 2022
+  url: https://doi.org/10.1109/JIOT.2022.3224750
+  paper_url: https://doi.org/10.1109/JIOT.2022.3224750

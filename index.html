@@ -1,157 +1,60 @@
 ---
 layout: default
 title: Home
-description: Academic homepage for Zhizhen Zhang, built as a GitHub Pages friendly Jekyll site.
+description: Zhizhen Zhang — embodied AI, computer vision, and robotics at The University of Queensland.
 permalink: /
 ---
-
-<section class="about-grid">
-  <aside class="about-sidebar">
-    <div class="profile-image-card" aria-label="Profile image placeholder">
-      <img
-        class="profile-image"
-        src="{{ '/assets/img/zhizhen.png' | relative_url }}"
-        alt="Avatar placeholder for Zhizhen Zhang"
-      />
-    </div>
-    <div class="about-links">
-      <a href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">Google Scholar</a>
-      <span>{{ site.data.profile.email_display }}</span>
-    </div>
-  </aside>
-
-  <div class="about-content">
-    <h1 class="about-title">{{ site.title }}</h1>
-    <p class="about-affiliation">{{ site.data.profile.affiliation }}.</p>
-    <p>
-      {{ site.data.profile.lead_prefix }}
-      {% for supervisor in site.data.profile.supervisors %}
-      <a href="{{ supervisor.url }}" target="_blank" rel="noreferrer">{{ supervisor.name }}</a>{% if forloop.last == false %}{% if forloop.length == 2 and forloop.index == 1 %} and {% else %}, {% endif %}{% endif %}
-      {% endfor %}. {{ site.data.profile.lead_suffix }}
-    </p>
-    <p>{{ site.data.profile.bio_paragraph_1 }}</p>
-    <p>{{ site.data.profile.bio_paragraph_2 }}</p>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> EMBODIED AI / COMPUTER VISION / ROBOTICS</p>
+    <h1 id="hero-title">Zhizhen<br><span>Zhang</span><span class="name-period">.</span></h1>
+    <p class="hero-position">PhD researcher<span class="small-cross" aria-hidden="true">＋</span>The University of Queensland</p>
+    <p class="hero-intro">Exploring how intelligent systems<br class="desktop-break"> perceive, act, and generalize.</p>
+    <div class="hero-links"><a class="button button-dark" href="#research">Explore research <span aria-hidden="true">↓</span></a><a class="text-link" href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a></div>
+  </div>
+  <div class="terrain-panel">
+    <img class="terrain" src="{{ '/assets/img/terrain.svg' | relative_url }}" alt="" aria-hidden="true">
+    <div class="terrain-top mono"><span>RESEARCH FIELD NOTES</span><span aria-hidden="true">＋</span></div>
+    <figure class="portrait"><img src="{{ '/assets/img/zhizhen.png' | relative_url }}" alt="Zhizhen Zhang" width="176" height="204"><figcaption>ZHIZHEN ZHANG / UQ</figcaption></figure>
+    <div class="terrain-bottom"><span class="mono">PERCEPTION<br>↓<br>ACTION<br>↓<br>GENERALIZATION</span><span class="map-coordinates mono">27.50° S<br>153.01° E<br><span>BRISBANE, AU</span></span></div>
   </div>
 </section>
-
-<section class="simple-section">
-  <h2 class="section-title">News</h2>
-  <div class="news-list">
-    {% for item in site.data.highlights %}
-    <div class="news-item">
-      <span class="news-date">{{ item.date }}</span>
-      <div class="news-text">
-        <strong>{{ item.title }}</strong>
-        <p>{{ item.summary }}</p>
-      </div>
-      {% if item.url %}
-      <a class="news-link" href="{{ item.url }}" target="_blank" rel="noreferrer">Link</a>
-      {% endif %}
+<div class="field-strip mono"><span><span aria-hidden="true">＋</span> CONNECTING PERCEPTION & ACTION</span><span>RESEARCH / SELECTED WORK / COMMUNITY</span></div>
+<section class="about section-row" id="about" aria-labelledby="about-title">
+  <div class="section-label"><span class="section-number">01 / PROFILE</span><h2 id="about-title">About me</h2></div>
+  <div class="about-body"><p>{{ site.data.profile.lead_prefix }} {% for supervisor in site.data.profile.supervisors %}<a href="{{ supervisor.url }}" target="_blank" rel="noopener noreferrer">{{ supervisor.name }}</a>{% unless forloop.last %} and {% endunless %}{% endfor %}. {{ site.data.profile.lead_suffix }}</p><a class="inline-contact" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }} <span aria-hidden="true">↗</span></a></div>
+</section>
+<section class="news section-row" aria-labelledby="news-title">
+  <div class="section-label"><span class="section-number">02 / UPDATES</span><h2 id="news-title">Latest signals</h2></div>
+  <div class="news-list">{% for item in site.data.highlights %}<article class="news-item"><time class="mono">{{ item.date }}</time><div><h3>{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }} <span aria-hidden="true">↗</span></a>{% else %}{{ item.title }}{% endif %}</h3><p>{{ item.summary }}</p></div></article>{% endfor %}</div>
+</section>
+<section class="research-section" id="research" aria-labelledby="research-title">
+  <div class="section-heading"><div><span class="section-number">03 / RESEARCH</span><h2 id="research-title">Selected publications<span class="accent-dot">.</span></h2></div><a class="text-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">↗</span></a></div>
+  <p class="section-intro">From visual understanding to generalizable embodied agents.</p>
+  <div class="publications">{% for publication in site.data.publications %}{% if publication.homepage_selected %}<article class="publication" data-publication data-search="{{ publication.title | escape }} {{ publication.area | escape }} {{ publication.year }} {{ publication.venue_short | escape }}">
+  {% if publication.teaser_image %}
+  <a class="publication-visual" href="{{ publication.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ publication.title | escape }}">
+    <img src="{{ publication.teaser_image | relative_url }}" alt="{{ publication.teaser_alt | default: publication.title | escape }}" loading="lazy" width="640" height="360">
+    <span class="figure-label" aria-hidden="true">RESEARCH / {{ publication.year }}</span>
+  </a>
+  {% else %}
+  <div class="publication-visual publication-visual-empty" aria-hidden="true"></div>
+  {% endif %}
+  <div class="publication-content">
+    <div class="publication-meta"><span class="venue-label">{{ publication.venue_short | default: publication.venue }}</span>{% if publication.note %}<span class="author-note">{{ publication.note }}</span>{% endif %}</div>
+    <h3>{% if publication.url %}<a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}</h3>
+    <p class="publication-authors">{{ publication.authors_html | default: publication.authors }}</p>
+    <p class="publication-summary">{{ publication.summary }}</p>
+    <div class="paper-links">
+      {% if publication.paper_url %}<a href="{{ publication.paper_url }}" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.project_url %}<a href="{{ publication.project_url }}" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.code_url %}<a href="{{ publication.code_url }}" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>{% endif %}
     </div>
-    {% endfor %}
   </div>
+</article>{% endif %}{% endfor %}</div>
 </section>
-
-<section class="simple-section">
-  <h2 class="section-title">Selected Publications</h2>
-  <p class="section-subtitle">
-    Highlighting publications in CORE-ranked A and A* venues, together with a high-impact journal article.
-    <a href="{{ '/publications/' | relative_url }}">View all publications</a>
-    or
-    <a href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noreferrer">see Google Scholar</a>.
-  </p>
-  <ol class="publication-plain-list">
-    {% for publication in site.data.publications %}
-    {% if publication.homepage_selected %}
-    <li class="publication-plain-item">
-      {% if publication.teaser_image and publication.teaser_image != "" %}
-      <div class="publication-teaser-frame">
-        <img
-          class="publication-teaser-image"
-          src="{{ publication.teaser_image | relative_url }}"
-          alt="{{ publication.teaser_alt | default: publication.title }}"
-        />
-      </div>
-      {% else %}
-      <div class="publication-teaser-frame publication-teaser-empty" aria-hidden="true"></div>
-      {% endif %}
-      <div class="publication-plain-content">
-        <div class="publication-plain-meta">
-          {{ publication.venue }}
-          {% if publication.core_rank %}
-          <span class="rank-badge">CORE {{ publication.core_rank }}</span>
-          {% endif %}
-          {% if publication.selection_note %}
-          <span class="rank-badge journal-badge">{{ publication.selection_note }}</span>
-          {% endif %}
-        </div>
-        <h3 class="publication-plain-title">
-          {% if publication.url %}
-          <a href="{{ publication.url }}" target="_blank" rel="noreferrer">{{ publication.title }}</a>
-          {% else %}
-          {{ publication.title }}
-          {% endif %}
-        </h3>
-        <p class="publication-plain-authors">{{ publication.authors_html | default: publication.authors }}</p>
-        {% if publication.note %}
-        <p class="publication-note">{{ publication.note }}</p>
-        {% endif %}
-        <p class="publication-plain-links">
-          <span>{{ publication.year }}</span>
-          <span>{{ publication.area }}</span>
-          <span>{{ publication.citations }}</span>
-        </p>
-      </div>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ol>
+<section class="service-section section-row" id="service" aria-labelledby="service-title">
+  <div class="section-label"><span class="section-number">04 / COMMUNITY</span><h2 id="service-title">Academic service</h2><p>Contributing to the<br>research community.</p></div>
+  <div class="service-body"><h3 class="record-heading">Peer review</h3><div class="record-list">{% for item in site.data.main_sections.professional_services %}<div class="record-item"><span class="record-year mono">{{ item.year }}</span><span>{{ item.text }}</span></div>{% endfor %}</div><h3 class="record-heading teaching-heading">Teaching</h3><div class="record-list">{% for item in site.data.main_sections.teaching_assistantship %}<div class="record-item"><span class="record-year mono">{{ item.year }}</span><span>{{ item.text }}</span></div>{% endfor %}</div></div>
 </section>
-
-<section class="simple-section">
-  <h2 class="section-title">Awards</h2>
-  <div class="record-list">
-    {% for item in site.data.main_sections.awards %}
-    <div class="record-item">
-      <span class="record-year">{{ item.year }}</span>
-      <div class="record-text">{{ item.text }}</div>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="simple-section">
-  <h2 class="section-title">Academic Activities</h2>
-  <div class="record-list">
-    {% for item in site.data.main_sections.academic_activities %}
-    <div class="record-item">
-      <span class="record-year">{{ item.year }}</span>
-      <div class="record-text">{{ item.text }}</div>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="simple-section">
-  <h2 class="section-title">Professional Services</h2>
-  <div class="record-list">
-    {% for item in site.data.main_sections.professional_services %}
-    <div class="record-item">
-      <span class="record-year">{{ item.year }}</span>
-      <div class="record-text">{{ item.text }}</div>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="simple-section">
-  <h2 class="section-title">Teaching Assistantship</h2>
-  <div class="record-list">
-    {% for item in site.data.main_sections.teaching_assistantship %}
-    <div class="record-item">
-      <span class="record-year">{{ item.year }}</span>
-      <div class="record-text">{{ item.text }}</div>
-    </div>
-    {% endfor %}
-  </div>
-</section>
+<section class="section-row experience" aria-labelledby="experience-title"><div class="section-label"><span class="section-number">05 / EXPERIENCE</span><h2 id="experience-title">Along the way</h2></div><div><h3 class="record-heading">Awards & support</h3><div class="record-list">{% for item in site.data.main_sections.awards %}<div class="record-item"><span class="record-year mono">{{ item.year }}</span><span>{{ item.text }}</span></div>{% endfor %}</div><h3 class="record-heading teaching-heading">Academic activities</h3><div class="record-list">{% for item in site.data.main_sections.academic_activities %}<div class="record-item"><span class="record-year mono">{{ item.year }}</span><span>{{ item.text }}</span></div>{% endfor %}</div></div></section>
