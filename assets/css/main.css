@@ -281,8 +281,8 @@ input {
 }
 
 .terrain-panel {
-    background: var(--ink);
-    color: #dfebe6;
+    background: #e7ede7;
+    color: #4a625f;
     position: relative;
     overflow: hidden;
     min-height: 495px
@@ -306,12 +306,12 @@ input {
     padding: 22px 26px;
     font-size: 9px;
     letter-spacing: .12em;
-    color: #bccdca
+    color: #4a625f
 }
 
 .terrain-top>span:last-child {
     font-size: 20px;
-    color: var(--signal);
+    color: #967323;
     line-height: 1
 }
 
@@ -320,9 +320,9 @@ input {
     top: 76px;
     left: 30px;
     width: 164px;
-    border: 1px solid #bdd0c35c;
+    border: 1px solid #bacac0;
     padding: 6px;
-    background: #153541
+    background: #f6f7f1
 }
 
 .portrait img {
@@ -336,7 +336,7 @@ input {
     font-size: 8px;
     letter-spacing: .07em;
     padding: 7px 2px 1px;
-    color: #d1dfd9
+    color: #4a625f
 }
 
 .terrain-bottom {
@@ -353,14 +353,14 @@ input {
 }
 
 .terrain-bottom>span:first-child {
-    color: #d8e4de
+    color: #4a625f
 }
 
 .route-key::before {
     content: '';
     display: inline-block;
     width: 16px;
-    border-top: 1px solid var(--signal);
+    border-top: 1px solid #967323;
     margin: 0 8px 3px 0
 }
 

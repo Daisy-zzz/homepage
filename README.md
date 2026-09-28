@@ -6,7 +6,8 @@ https://daisy-zzz.github.io/homepage/.
 The visual direction uses fog-white paper, ocean-blue ink, topographic contours,
 a continuous route linking perception, action, and generalization, and restrained
 signal-yellow accents. The terrain is an abstract research landscape, not geographic
-data; contours share a continuous elevation field. The portrait keeps its original
+data; contours share a continuous elevation field. The map uses a pale mist and
+gray-green palette with a muted gold route. The portrait keeps its original
 colors. The terrain, publication placeholder, and
 identity mark are original SVG assets. No build-time JavaScript framework, external
 font service, analytics, or game assets are required.
