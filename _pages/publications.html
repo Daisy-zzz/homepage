@@ -13,7 +13,10 @@ permalink: /publications/
     <span class="figure-label" aria-hidden="true">RESEARCH / {{ publication.year }}</span>
   </a>
   {% else %}
-  <div class="publication-visual publication-visual-empty" aria-hidden="true"></div>
+  <div class="publication-visual publication-placeholder">
+    <img src="{{ '/assets/img/publication-placeholder.svg' | relative_url }}" alt="Preview unavailable" loading="lazy" width="640" height="400">
+    <span class="figure-label" aria-hidden="true">RESEARCH / {{ publication.year }}</span>
+  </div>
   {% endif %}
   <div class="publication-content">
     <div class="publication-meta"><span class="venue-label">{{ publication.venue_short | default: publication.venue }}</span>{% if publication.note %}<span class="author-note">{{ publication.note }}</span>{% endif %}</div>

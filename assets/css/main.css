@@ -292,8 +292,9 @@ input {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    opacity: .8
+    object-fit: contain;
+    object-position: right center;
+    opacity: 1
 }
 
 .terrain-top {
@@ -316,9 +317,9 @@ input {
 
 .portrait {
     position: absolute;
-    top: 85px;
+    top: 76px;
     left: 30px;
-    width: 152px;
+    width: 164px;
     border: 1px solid #bdd0c35c;
     padding: 6px;
     background: #153541
@@ -326,9 +327,8 @@ input {
 
 .portrait img {
     width: 100%;
-    height: 163px;
-    object-fit: cover;
-    filter: saturate(.5)
+    height: 184px;
+    object-fit: cover
 }
 
 .portrait figcaption {
@@ -356,15 +356,12 @@ input {
     color: #d8e4de
 }
 
-.map-coordinates {
-    text-align: right
-}
-
-.map-coordinates>span {
+.route-key::before {
+    content: '';
     display: inline-block;
-    margin-top: 10px;
-    color: #b6c7c1;
-    font-size: 8px
+    width: 16px;
+    border-top: 1px solid var(--signal);
+    margin: 0 8px 3px 0
 }
 
 .field-strip {
@@ -821,6 +818,9 @@ input {
 }
 
 @media(max-width:1050px) {
+    .portrait { width: 140px; }
+    .portrait img { height: 158px; }
+
     .page-shell {
         padding: 0 32px
     }
@@ -956,11 +956,11 @@ input {
     }
 
     .terrain-panel {
-        min-height: 310px
+        min-height: 430px
     }
 
     .terrain {
-        object-position: center 54%
+        object-position: right center
     }
 
     .portrait {
@@ -982,10 +982,10 @@ input {
     }
 
     .terrain-bottom {
-        left: auto;
+        left: 24px;
         right: 22px;
         bottom: 22px;
-        gap: 45px
+        gap: 12px
     }
 
     .terrain-bottom>span:first-child {
@@ -1252,11 +1252,12 @@ input {
     }
 
     .terrain-bottom {
-        gap: 30px
+        gap: 12px;
+        font-size: 7px
     }
 
     .terrain-bottom>span:first-child {
-        display: none
+        font-size: 7px
     }
 }
 
@@ -1365,6 +1366,6 @@ input {
     }
 }
 
-/* Leave unavailable paper figures blank until the original figure is supplied. */
-.publication-visual-empty { background: transparent; border: 0; }
-@media (max-width: 520px) { .publication-visual-empty { display: none; } }
+/* A neutral placeholder distinguishes missing previews from actual method figures. */
+.publication-placeholder { background: #e8ede7; padding: 0; }
+.publication-placeholder .figure-label { color: #536c6a; }
