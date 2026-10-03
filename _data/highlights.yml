@@ -10,6 +10,5 @@
   url: https://mergevla.github.io/
 - date: 2025
   title: AcTOL appears at NeurIPS 2025!
-  summary: AcTOL explores the ordering and continuity in vision-language pretraining
-    with human action data for generalized embodied agents.
+  summary: AcTOL learns ordered and continuous vision-language representations from human action videos for robot learning and language-conditioned manipulation.
   url: https://actol-pretrain.github.io/
