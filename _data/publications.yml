@@ -29,20 +29,22 @@
   paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Fu_MergeVLA_Cross-Skill_Model_Merging_Toward_a_Generalist_Vision-Language-Action_Agent_CVPR_2026_paper.html
   code_url: https://github.com/MergeVLA/MergeVLA
 - title: Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents
-  authors: Z Zhang, L Zhu, Z Fang, Z Huang, Y Luo
-  authors_html: <strong>Zhizhen Zhang</strong>, L Zhu, Z Fang, Z Huang, Y Luo
-  venue: Annual Conference on Neural Information Processing Systems (NeurIPS), 2025
+  authors: Zhizhen Zhang, Lei Zhu, Zhen Fang, Zi Huang, Yadan Luo
+  authors_html: <strong>Zhizhen Zhang</strong>, Lei Zhu, Zhen Fang, Zi Huang, Yadan Luo
+  venue: Advances in Neural Information Processing Systems 38 (NeurIPS), 2025
   year: 2025
   citations: New entry
-  area: Vision-Language Pre-training for Robotics, Self-supervised Learning
+  area: Robot Learning, Human Videos, Vision-Language Pretraining, Temporal Representation Learning
   core_rank: A*
   homepage_selected: true
   url: https://actol-pretrain.github.io/
   teaser_image: /assets/img/actol_teaser.png
-  teaser_alt: Teaser image for ACTOL
-  summary: Studies temporal ordering and continuity objectives for stronger embodied agent pretraining.
+  teaser_alt: AcTOL temporal ordering and continuity for vision-language pretraining
+  summary: AcTOL learns ordered and continuous vision-language representations from human action videos for robot learning and language-conditioned manipulation.
   venue_short: NeurIPS · 2025
   project_url: https://actol-pretrain.github.io/
+  paper_url: https://papers.neurips.cc/paper_files/paper/2025/hash/68fa5b1f1c024639685be9668fd5dc32-Abstract-Conference.html
+  code_url: https://github.com/Daisy-zzz/AcTOL
 - title: Contrastive Learning for Implicit Social Factors in Social Media Popularity Prediction
   authors: Z Zhang, R Qiu, X Xie
   authors_html: <strong>Zhizhen Zhang</strong>, R Qiu, X Xie
