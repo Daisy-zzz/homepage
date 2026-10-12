@@ -1,3 +1,19 @@
+- title: 'Train Together or Merge Later? Unifying VLA Experts via a Shared Action Interface'
+  authors: Zhizhen Zhang, Yuxia Fu, Zijian Wang, Helen Huang, Yadan Luo
+  authors_html: <strong>Zhizhen Zhang</strong>, Yuxia Fu, Zijian Wang, Helen Huang, Yadan Luo
+  venue: 'arXiv preprint arXiv:2609.33125, 2026'
+  venue_short: arXiv · 2026
+  year: 2026
+  area: PolicyWeave, Vision-Language-Action Models, Model Merging, Multi-task Learning
+  homepage_selected: true
+  url: https://arxiv.org/abs/2609.33125
+  paper_url: https://arxiv.org/abs/2609.33125
+  project_url: https://policyweave.github.io/
+  summary: PolicyWeave combines merge-compatible post-training with context-guided sparse merging to unify independently trained VLA experts through a shared action interface.
+  teaser_image: /assets/img/policyweave_method.png
+  teaser_alt: 'PolicyWeave method: shared-interface post-training and context-guided sparse merging'
+  teaser_source: https://policyweave.github.io/assets/images/method.png
+  source_url: https://arxiv.org/abs/2609.33125
 - title: 'MobiGuide: Vocabulary-Guided Online Recovery for Mobile Manipulation'
   authors: Jia Syuen Lim, Zhizhen Zhang, Peter Bohm, Brendan Tidd, Zi Huang, Yadan Luo
   authors_html: Jia Syuen Lim, <strong>Zhizhen Zhang</strong>, Peter Bohm, Brendan Tidd, Zi Huang, Yadan Luo
