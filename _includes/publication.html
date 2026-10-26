@@ -1,0 +1,22 @@
+<article class="publication" data-publication data-search="{{ publication.title | escape }} {{ publication.area | escape }} {{ publication.year }} {{ publication.venue_short | escape }}">
+  {% if publication.teaser_image %}
+  <a class="publication-visual" href="{{ publication.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ publication.title | escape }}">
+    <img src="{{ publication.teaser_image | relative_url }}" alt="{{ publication.teaser_alt | default: publication.title | escape }}" loading="lazy" width="640" height="360">
+  </a>
+  {% else %}
+  <div class="publication-visual publication-placeholder">
+    <img src="{{ '/assets/img/publication-placeholder.svg' | relative_url }}" alt="Preview unavailable" loading="lazy" width="640" height="400">
+  </div>
+  {% endif %}
+  <div class="publication-content">
+    <div class="publication-meta"><span class="venue-label">{{ publication.venue_short | default: publication.venue }}</span>{% if publication.note %}<span class="author-note">{{ publication.note }}</span>{% endif %}</div>
+    <h3><a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.title }}</a></h3>
+    <p class="publication-authors">{{ publication.authors_html | default: publication.authors }}</p>
+    <p class="publication-summary">{{ publication.summary }}</p>
+    <div class="paper-links">
+      {% if publication.paper_url %}<a href="{{ publication.paper_url }}" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.project_url %}<a href="{{ publication.project_url }}" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.code_url %}<a href="{{ publication.code_url }}" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>{% endif %}
+    </div>
+  </div>
+</article>

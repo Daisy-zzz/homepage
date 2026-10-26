@@ -3,3 +3,9 @@ main:
     url: /
   - title: Publications
     url: /publications/
+  - title: Service
+    url: /#service
+  - title: Teaching
+    url: /#teaching
+  - title: Awards
+    url: /#awards

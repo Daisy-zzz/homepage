@@ -1,7 +1,7 @@
-- title: 'Train Together or Merge Later? Unifying VLA Experts via a Shared Action Interface'
+- title: Train Together or Merge Later? Unifying VLA Experts via a Shared Action Interface
   authors: Zhizhen Zhang, Yuxia Fu, Zijian Wang, Helen Huang, Yadan Luo
   authors_html: <strong>Zhizhen Zhang</strong>, Yuxia Fu, Zijian Wang, Helen Huang, Yadan Luo
-  venue: 'arXiv preprint arXiv:2609.33125, 2026'
+  venue: arXiv preprint arXiv:2609.33125, 2026
   venue_short: arXiv · 2026
   year: 2026
   area: PolicyWeave, Vision-Language-Action Models, Model Merging, Multi-task Learning
@@ -17,15 +17,19 @@
 - title: 'MobiGuide: Vocabulary-Guided Online Recovery for Mobile Manipulation'
   authors: Jia Syuen Lim, Zhizhen Zhang, Peter Bohm, Brendan Tidd, Zi Huang, Yadan Luo
   authors_html: Jia Syuen Lim, <strong>Zhizhen Zhang</strong>, Peter Bohm, Brendan Tidd, Zi Huang, Yadan Luo
-  venue: 'RSS 2026 Workshop: Open World Navigation in the Foundation Model Era (OWN)'
-  venue_short: RSS 2026 · Workshop
+  venue: arXiv preprint arXiv:2604.01567v2, 2026
+  venue_short: arXiv · 2026
   year: 2026
   area: Mobile Manipulation, Online Recovery
   homepage_selected: true
-  url: https://openreview.net/forum?id=jHw4NASZlG
-  paper_url: https://openreview.net/forum?id=jHw4NASZlG
-  summary: Guides mobile manipulation with a trajectory vocabulary and online recovery.
-  source_url: https://adacompnus.github.io/open-world-navigation-26/papers/
+  url: https://arxiv.org/html/2604.01567v2
+  paper_url: https://arxiv.org/html/2604.01567v2
+  summary: MobiGuide refines demonstration-derived trajectory anchors and uses online residual correction for stable mobile manipulation.
+  source_url: https://arxiv.org/html/2604.01567v2
+  teaser_image: /assets/img/mobiguide_method.png
+  teaser_alt: 'MobiGuide framework: vocabulary-guided trajectory refinement and scoring'
+  teaser_source: https://arxiv.org/html/2604.01567v2/figs/mobiguide_flowchart.png
+  teaser_figure: Figure 4 in arXiv:2604.01567v2
 - title: 'MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent'
   authors: Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo
   authors_html: Y Fu, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Wang, Z Huang, Y Luo

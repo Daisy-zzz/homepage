@@ -1,4 +1,20 @@
 (() => {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('#site-nav');
+  if (toggle && nav) {
+    toggle.hidden = false;
+    document.documentElement.classList.add('nav-enhanced');
+    const close = () => { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); };
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') !== 'true';
+      toggle.setAttribute('aria-expanded', String(open));
+      nav.classList.toggle('is-open', open);
+    });
+    nav.addEventListener('click', event => { if (event.target.closest('a')) close(); });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && nav.classList.contains('is-open')) { close(); toggle.focus(); }
+    });
+  }
   const input = document.querySelector('#publication-search');
   if (!input) return;
   const papers = [...document.querySelectorAll('[data-publication]')];
