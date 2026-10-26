@@ -1,0 +1,1 @@
+<article class="news-item"><time>{{ item.date }}</time><h3>{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title | remove: '!' }}</a>{% else %}{{ item.title | remove: '!' }}{% endif %}</h3></article>

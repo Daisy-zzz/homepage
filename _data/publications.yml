@@ -14,6 +14,8 @@
   teaser_alt: 'PolicyWeave method: shared-interface post-training and context-guided sparse merging'
   teaser_source: https://policyweave.github.io/assets/images/method.png
   source_url: https://arxiv.org/abs/2609.33125
+  feature_name: PolicyWeave
+  feature_description: Unifying independently trained VLA experts through a shared action interface.
 - title: 'MobiGuide: Vocabulary-Guided Online Recovery for Mobile Manipulation'
   authors: Jia Syuen Lim, Zhizhen Zhang, Peter Bohm, Brendan Tidd, Zi Huang, Yadan Luo
   authors_html: Jia Syuen Lim, <strong>Zhizhen Zhang</strong>, Peter Bohm, Brendan Tidd, Zi Huang, Yadan Luo
@@ -30,6 +32,8 @@
   teaser_alt: 'MobiGuide framework: vocabulary-guided trajectory refinement and scoring'
   teaser_source: https://arxiv.org/html/2604.01567v2/figs/mobiguide_flowchart.png
   teaser_figure: Figure 4 in arXiv:2604.01567v2
+  feature_name: MobiGuide
+  feature_description: Vocabulary-guided trajectory refinement and online recovery for mobile manipulation.
 - title: 'MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent'
   authors: Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo
   authors_html: Y Fu, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Wang, Z Huang, Y Luo
@@ -48,6 +52,8 @@
   project_url: https://mergevla.github.io/
   paper_url: https://openaccess.thecvf.com/content/CVPR2026/html/Fu_MergeVLA_Cross-Skill_Model_Merging_Toward_a_Generalist_Vision-Language-Action_Agent_CVPR_2026_paper.html
   code_url: https://github.com/MergeVLA/MergeVLA
+  feature_name: MergeVLA
+  feature_description: Combining skills from specialist vision-language-action models through model merging.
 - title: Provable Ordering and Continuity in Vision-Language Pretraining for Generalizable Embodied Agents
   authors: Zhizhen Zhang, Lei Zhu, Zhen Fang, Zi Huang, Yadan Luo
   authors_html: <strong>Zhizhen Zhang</strong>, Lei Zhu, Zhen Fang, Zi Huang, Yadan Luo
@@ -65,6 +71,8 @@
   project_url: https://actol-pretrain.github.io/
   paper_url: https://papers.neurips.cc/paper_files/paper/2025/hash/68fa5b1f1c024639685be9668fd5dc32-Abstract-Conference.html
   code_url: https://github.com/Daisy-zzz/AcTOL
+  feature_name: AcTOL
+  feature_description: Learning temporally ordered and continuous representations from human action videos for robot learning.
 - title: Contrastive Learning for Implicit Social Factors in Social Media Popularity Prediction
   authors: Z Zhang, R Qiu, X Xie
   authors_html: <strong>Zhizhen Zhang</strong>, R Qiu, X Xie

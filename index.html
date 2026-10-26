@@ -5,11 +5,9 @@ description: Zhizhen Zhang — PhD candidate at The University of Queensland, re
 permalink: /
 ---
 <section class="profile-section" id="about" aria-labelledby="profile-title">
-  <header class="profile-heading">
-    <h1 id="profile-title">Zhizhen Zhang</h1>
-  </header>
   <div class="profile-grid">
     <div class="profile-copy">
+      <h1 id="profile-title">Zhizhen Zhang</h1>
       <p>{{ site.data.profile.lead_prefix }} {% for supervisor in site.data.profile.supervisors %}<a href="{{ supervisor.url }}" target="_blank" rel="noopener noreferrer">{{ supervisor.name }}</a>{% unless forloop.last %} and {% endunless %}{% endfor %}. {{ site.data.profile.lead_suffix }}</p>
       <p>{{ site.data.profile.research_summary }}</p>
       <div class="profile-links" aria-label="Contact and profiles"><a href="mailto:{{ site.data.profile.email }}">Email</a><a href="{{ site.data.profile.scholar_url }}" target="_blank" rel="noopener noreferrer">Google Scholar</a><a href="{{ site.data.profile.github_url }}" target="_blank" rel="noopener noreferrer">GitHub</a><a href="{{ site.data.profile.linkedin_url }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
@@ -18,16 +16,34 @@ permalink: /
   </div>
 </section>
 
-<section class="content-section" id="news" aria-labelledby="news-title">
+<section class="content-section featured-section" id="research" aria-labelledby="research-title">
+  <div class="section-heading"><h2 id="research-title">Selected research</h2><a href="#publications">View publications <span aria-hidden="true">↗</span></a></div>
+  <div class="featured-grid">
+    {% for publication in site.data.publications %}{% if publication.feature_name %}
+    <article class="featured-work">
+      <a class="featured-visual" href="{{ publication.project_url | default: publication.url }}" target="_blank" rel="noopener noreferrer" aria-label="Explore {{ publication.feature_name }}">
+        <img src="{{ publication.teaser_image | relative_url }}" alt="{{ publication.teaser_alt | escape }}" width="900" height="500" loading="lazy">
+        <span class="visual-arrow" aria-hidden="true">↗</span>
+      </a>
+      <div class="featured-heading"><h3><a href="{{ publication.project_url | default: publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.feature_name }}</a></h3><span>{{ publication.venue_short }}</span></div>
+      <p>{{ publication.feature_description }}</p>
+    </article>
+    {% endif %}{% endfor %}
+  </div>
+</section>
+
+<section class="content-section news-section" id="news" aria-labelledby="news-title">
   <h2 id="news-title">News</h2>
-  <div class="news-list">{% for item in site.data.highlights %}<article class="news-item"><time>{{ item.date }}</time><div><h3>{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title | remove: '!' }}</a>{% else %}{{ item.title | remove: '!' }}{% endif %}</h3></div></article>{% endfor %}</div>
+  <div class="news-list">{% for item in site.data.highlights limit:3 %}{% include news-item.html %}{% endfor %}</div>
+  {% if site.data.highlights.size > 3 %}<details class="older-news"><summary>Earlier news</summary><div class="news-list">{% for item in site.data.highlights offset:3 %}{% include news-item.html %}{% endfor %}</div></details>{% endif %}
 </section>
 
-<section class="content-section" id="research" aria-labelledby="research-title">
-  <div class="section-heading"><h2 id="research-title">Selected publications</h2><a href="{{ '/publications/' | relative_url }}">All publications</a></div>
-  <div class="publications">{% for publication in site.data.publications %}{% if publication.homepage_selected %}{% include publication.html %}{% endif %}{% endfor %}</div>
+<section class="content-section" id="publications" aria-labelledby="publications-title">
+  <div class="section-heading"><h2 id="publications-title">Publications</h2><a href="{{ '/publications/' | relative_url }}">Search publications <span aria-hidden="true">↗</span></a></div>
+  <div class="publications">{% for publication in site.data.publications %}{% include publication.html %}{% endfor %}</div>
 </section>
 
+<div class="academic-grid">
 <section class="content-section" id="service" aria-labelledby="service-title">
   <h2 id="service-title">Academic service</h2>
   <div class="record-list">{% for item in site.data.main_sections.professional_services %}<div class="record-item"><span class="record-year">{{ item.year }}</span><span>{{ item.text }}</span></div>{% endfor %}</div>
@@ -47,3 +63,5 @@ permalink: /
   <h2 id="activities-title">Academic activities</h2>
   <div class="record-list">{% for item in site.data.main_sections.academic_activities %}<div class="record-item"><span class="record-year">{{ item.year }}</span><span>{{ item.text }}</span></div>{% endfor %}</div>
 </section>
+
+</div>
