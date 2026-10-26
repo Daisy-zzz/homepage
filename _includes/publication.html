@@ -9,14 +9,13 @@
   </div>
   {% endif %}
   <div class="publication-content">
-    <div class="publication-meta"><span class="venue-label">{{ publication.venue_short | default: publication.venue }}</span>{% if publication.note %}<span class="author-note">{{ publication.note }}</span>{% endif %}</div>
     <h3><a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.title }}</a></h3>
     <p class="publication-authors">{{ publication.authors_html | default: publication.authors }}</p>
-    <p class="publication-summary">{{ publication.summary }}</p>
+    <div class="publication-meta"><span class="venue-label">{{ publication.venue_short | default: publication.venue }}</span>{% if publication.note %}<span class="author-note">{{ publication.note }}</span>{% endif %}</div>
     <div class="paper-links">
-      {% if publication.paper_url %}<a href="{{ publication.paper_url }}" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>{% endif %}
-      {% if publication.project_url %}<a href="{{ publication.project_url }}" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>{% endif %}
-      {% if publication.code_url %}<a href="{{ publication.code_url }}" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.paper_url %}<a href="{{ publication.paper_url }}" target="_blank" rel="noopener noreferrer">[paper]</a>{% endif %}
+      {% if publication.project_url %}<a href="{{ publication.project_url }}" target="_blank" rel="noopener noreferrer">[project]</a>{% endif %}
+      {% if publication.code_url %}<a href="{{ publication.code_url }}" target="_blank" rel="noopener noreferrer">[code]</a>{% endif %}
     </div>
   </div>
 </article>

@@ -1,6 +1,6 @@
 focus_line: Embodied AI · Computer Vision · Robotics
 hero_title: Academic systems for perception, action, and temporal intelligence.
-lead_prefix: I am a PhD candidate in the School of Electrical Engineering and Computer Science at The University of Queensland, supervised by
+lead_prefix: I am a PhD candidate at The University of Queensland, supervised by
 lead_suffix: I received my master's degree from Tsinghua University.
 affiliation: The University of Queensland
 department: School of Electrical Engineering and Computer Science
@@ -23,5 +23,5 @@ focus_areas:
 - name: Past Interests
   description: Earlier work also included video understanding and related prediction problems.
 github_url: https://github.com/daisy-zzz
-research_summary: My research focuses on embodied AI and robot learning. I study data-efficient post-training, model merging, and multi-task learning for vision-language-action models, with the goal of building robotic policies that generalize across tasks and environments.
+research_summary: I work on embodied AI and robot learning, particularly data-efficient adaptation and model merging for vision-language-action policies. I am interested in how robots can share skills across tasks and adapt to new environments.
 linkedin_url: https://www.linkedin.com/in/zhizhen-zhang-7b099a297/
