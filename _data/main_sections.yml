@@ -1,4 +1,13 @@
 awards:
+- year: '2026'
+  text: CVPR Compute Transparency Champion Award · MergeVLA.
+  url: https://cvpr.thecvf.com/Conferences/2026/ComputeReporting
+- year: '2026'
+  text: CVPR Student Travel Grant · MergeVLA.
+  url: https://cvpr.thecvf.com/Conferences/2026/BroadeningParticipation
+- year: '2025'
+  text: NeurIPS Financial Assistance Grant · AcTOL.
+  url: https://neurips.cc/Conferences/2025/FinancialAssistance
 - year: '2025'
   text: Distinguished Poster Award on UQ DS EOY.
 - year: '2025'

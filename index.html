@@ -56,7 +56,7 @@ permalink: /
 
 <section class="content-section" id="awards" aria-labelledby="awards-title">
   <h2 id="awards-title">Awards &amp; support</h2>
-  <div class="record-list">{% for item in site.data.main_sections.awards %}<div class="record-item"><span class="record-year">{{ item.year }}</span><span>{{ item.text }}</span></div>{% endfor %}</div>
+  <div class="record-list">{% for item in site.data.main_sections.awards %}<div class="record-item"><span class="record-year">{{ item.year }}</span><span>{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.text }}</a>{% else %}{{ item.text }}{% endif %}</span></div>{% endfor %}</div>
 </section>
 
 <section class="content-section" id="activities" aria-labelledby="activities-title">
