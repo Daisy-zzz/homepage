@@ -1,0 +1,4 @@
+<section class="content-section" id="publications" aria-labelledby="publications-title">
+  <div class="section-heading"><h2 id="publications-title">Publications</h2><a href="{{ '/publications/' | relative_url }}">Search publications <span aria-hidden="true">↗</span></a></div>
+  <div class="publications">{% for publication in site.data.publications %}{% include publication.html %}{% endfor %}</div>
+</section>
