@@ -7,6 +7,7 @@ import json
 import os
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from difflib import SequenceMatcher
@@ -21,6 +22,8 @@ PUBLICATIONS_PATH = ROOT / "_data" / "publications.yml"
 PROFILE_PATH = ROOT / "_data" / "profile.yml"
 OPENALEX_WORKS_URL = "https://api.openalex.org/works"
 REQUEST_DELAY_SECONDS = 0.2
+REQUEST_RETRY_ATTEMPTS = 3
+REQUEST_RETRY_DELAY_SECONDS = 1.0
 MIN_MATCH_SCORE = 0.78
 
 
@@ -49,8 +52,21 @@ def build_headers() -> dict[str, str]:
 def openalex_query(params: dict[str, str]) -> dict[str, Any]:
     query = urllib.parse.urlencode(params)
     request = urllib.request.Request(f"{OPENALEX_WORKS_URL}?{query}", headers=build_headers())
-    with urllib.request.urlopen(request, timeout=20) as response:
-        return json.load(response)
+    for attempt in range(REQUEST_RETRY_ATTEMPTS):
+        try:
+            with urllib.request.urlopen(request, timeout=20) as response:
+                return json.load(response)
+        except urllib.error.HTTPError as error:
+            status = error.code
+            is_retriable = status == 429 or 500 <= status < 600
+            if not is_retriable or attempt + 1 >= REQUEST_RETRY_ATTEMPTS:
+                raise
+        except urllib.error.URLError:
+            if attempt + 1 >= REQUEST_RETRY_ATTEMPTS:
+                raise
+        time.sleep(REQUEST_RETRY_DELAY_SECONDS * (attempt + 1))
+
+    raise RuntimeError("OpenAlex query retry loop exited unexpectedly.")
 
 
 def collect_candidates(title: str, year: int | None) -> list[dict[str, Any]]:
@@ -64,7 +80,11 @@ def collect_candidates(title: str, year: int | None) -> list[dict[str, Any]]:
         mailto = os.getenv("OPENALEX_MAILTO")
         if mailto:
             params = {**params, "mailto": mailto}
-        payload = openalex_query(params)
+        try:
+            payload = openalex_query(params)
+        except (urllib.error.HTTPError, urllib.error.URLError) as error:
+            print(f"Warning: failed to query OpenAlex for '{title}': {error}")
+            continue
         for item in payload.get("results", []):
             work_id = item.get("id") or item.get("display_name") or repr(item)
             results_by_id[work_id] = item
