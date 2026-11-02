@@ -16,6 +16,7 @@
   source_url: https://arxiv.org/abs/2609.33125
   feature_name: PolicyWeave
   feature_description: Unifying independently trained VLA experts through a shared action interface.
+  citations: New entry
 - title: 'MobiGuide: Vocabulary-Guided Online Recovery for Mobile Manipulation'
   authors: Jia Syuen Lim, Zhizhen Zhang, Peter Bohm, Brendan Tidd, Zi Huang, Yadan Luo
   authors_html: Jia Syuen Lim, <strong>Zhizhen Zhang</strong>, Peter Bohm, Brendan Tidd, Zi Huang, Yadan Luo
@@ -34,6 +35,7 @@
   teaser_figure: Figure 4 in arXiv:2604.01567v2
   feature_name: MobiGuide
   feature_description: Vocabulary-guided trajectory refinement and online recovery for mobile manipulation.
+  citations: New entry
 - title: 'MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent'
   authors: Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo
   authors_html: Y Fu, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Wang, Z Huang, Y Luo
@@ -94,7 +96,7 @@
   authors_html: <strong>Zhizhen Zhang</strong>, X Xie, Y Zhang, L Zhang, Y Jiang
   venue: 2024 International Joint Conference on Neural Networks (IJCNN), 2024
   year: 2024
-  citations: New entry
+  citations: 4 citations
   area: Networked Intelligence
   core_rank: B
   summary: Uses hierarchical temporal graph attention to reason over information cascades.
@@ -110,7 +112,7 @@
   authors_html: Y Zhang, L Zhang, <strong>Zhizhen Zhang</strong>, Z Wang, X Xie, W Wang
   venue: 2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2024
   year: 2024
-  citations: New entry
+  citations: 1 citation
   area: Video Understanding
   summary: Addresses temporal shortcut behavior in moment retrieval over video corpora.
   venue_short: SMC · 2024
@@ -121,7 +123,7 @@
   authors_html: Y Tian, M Yang, L Zhang, <strong>Zhizhen Zhang</strong>, Y Liu, X Xie, X Que, W Wang
   venue: Proceedings of the 31st ACM International Conference on Multimedia, 2023
   year: 2023
-  citations: New entry
+  citations: 11 citations
   area: Video Understanding
   core_rank: A*
   homepage_selected: true
