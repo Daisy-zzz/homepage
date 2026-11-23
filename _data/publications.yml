@@ -35,13 +35,13 @@
   teaser_figure: Figure 4 in arXiv:2604.01567v2
   feature_name: MobiGuide
   feature_description: Vocabulary-guided trajectory refinement and online recovery for mobile manipulation.
-  citations: 5 citations
+  citations: 6 citations
 - title: 'MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action Agent'
   authors: Y Fu, Z Zhang, Y Zhang, Z Wang, Z Huang, Y Luo
   authors_html: Y Fu, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Wang, Z Huang, Y Luo
   venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
   year: 2026
-  citations: 15 citations
+  citations: 19 citations
   area: VLA model, Model Merging, Multi-task Learning
   core_rank: A*
   homepage_selected: true
@@ -61,7 +61,7 @@
   authors_html: <strong>Zhizhen Zhang</strong>, Lei Zhu, Zhen Fang, Zi Huang, Yadan Luo
   venue: Advances in Neural Information Processing Systems 38 (NeurIPS), 2025
   year: 2025
-  citations: 2 citations
+  citations: 4 citations
   area: Robot Learning, Human Videos, Vision-Language Pretraining, Temporal Representation Learning
   core_rank: A*
   homepage_selected: true
@@ -80,7 +80,7 @@
   authors_html: <strong>Zhizhen Zhang</strong>, R Qiu, X Xie
   venue: arXiv preprint arXiv:2410.09345, 2024
   year: 2024
-  citations: 5 citations
+  citations: 7 citations
   area: Networked Intelligence
   summary: Models hidden social factors that influence popularity prediction in social platforms.
   venue_short: arXiv · 2024
@@ -96,7 +96,7 @@
   authors_html: <strong>Zhizhen Zhang</strong>, X Xie, Y Zhang, L Zhang, Y Jiang
   venue: 2024 International Joint Conference on Neural Networks (IJCNN), 2024
   year: 2024
-  citations: 4 citations
+  citations: 7 citations
   area: Networked Intelligence
   core_rank: B
   summary: Uses hierarchical temporal graph attention to reason over information cascades.
@@ -123,7 +123,7 @@
   authors_html: Y Tian, M Yang, L Zhang, <strong>Zhizhen Zhang</strong>, Y Liu, X Xie, X Que, W Wang
   venue: Proceedings of the 31st ACM International Conference on Multimedia, 2023
   year: 2023
-  citations: 13 citations
+  citations: 15 citations
   area: Video Understanding
   core_rank: A*
   homepage_selected: true
@@ -138,7 +138,7 @@
   authors_html: Z Wang, X He, <strong>Zhizhen Zhang</strong>, Y Zhang, Z Cao, W Cheng, W Wang, Y Cui
   venue: IEEE Internet of Things Journal 10 (7), 6324-6335, 2022
   year: 2022
-  citations: 32 citations
+  citations: 36 citations
   area: Systems
   homepage_selected: true
   selection_note: JCR IF 8.9
